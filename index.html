@@ -1,553 +1,612 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" style="min-height: 100%; background-color: rgb(8, 10, 14); height: auto !important; overflow-y: auto !important; opacity: 0; visibility: visible !important;" data-stitch-orig-opacity="1"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>B Square Construction LLP | Modern Commercial &amp; Luxury Residential General Contractors Lubbock TX</title>
-<meta content="Premier Lubbock and West Texas general contractor specializing in commercial build-outs, custom timber framing, and luxury estates." name="description">
+<meta content="Premier Lubbock and West Texas general contractor specializing in commercial build-outs, custom timber framing, and luxury estates." name="description"/>
 <!-- Tailwind CSS v3 with Plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Google Fonts: Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<!-- Tailwind Configuration -->
-<script data-purpose="tailwind-config">
+<!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration matching Buildix style -->
+<script>
     tailwind.config = {
+      darkMode: "class",
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          },
           colors: {
             brand: {
-              orange: '#F25C05',
-              darkorange: '#D94E04',
-              surface: '#0B0D11',
-              card: '#13171F',
-              border: '#1E2532',
-              muted: '#8E9AA8'
+              orange: '#f97316',
+              darkorange: '#ea580c',
+              lightorange: '#ffedd5',
+              surface: '#0b0f17',
+              darkcard: '#111827',
+              cardborder: '#1f293d',
+              muted: '#94a3b8'
             }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Playfair Display"', 'serif']
           }
         }
       }
     }
   </script>
-<!-- Custom Core Styles -->
-<style data-purpose="core-theme">
-    body {
-      background-color: #080A0E;
-      color: #E2E8F0;
+<!-- Global Core Styling -->
+<style>
+    html, body {
+      background-color: #0b0f17 !important;
+      color: #f1f5f9;
       font-family: 'Plus Jakarta Sans', sans-serif;
       overflow-x: hidden;
+      overflow-y: auto !important;
+      opacity: 1 !important;
+      visibility: visible !important;
     }
-    .hero-glow {
-      background: radial-gradient(circle at 50% 20%, rgba(242, 92, 5, 0.15) 0%, rgba(11, 13, 17, 0) 70%);
+    
+    .hero-mesh {
+      background: radial-gradient(circle at 50% 12%, rgba(249, 115, 22, 0.16) 0%, rgba(11, 15, 23, 0) 70%);
     }
-    .badge-glow {
-      box-shadow: 0 0 20px -2px rgba(242, 92, 5, 0.35);
+
+    .badge-pill {
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.35);
+      box-shadow: 0 0 25px -4px rgba(249, 115, 22, 0.25);
     }
-    .card-border-glow:hover {
-      border-color: rgba(242, 92, 5, 0.6);
-      box-shadow: 0 10px 30px -10px rgba(242, 92, 5, 0.2);
+
+    .glass-card {
+      background: #111827;
+      border: 1px solid #1f293d;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .glass-card:hover {
+      border-color: rgba(249, 115, 22, 0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -12px rgba(249, 115, 22, 0.15);
+    }
+
+    .pulse-glow {
+      box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+      animation: pulse-ring 2s infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 18px rgba(249, 115, 22, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+      }
     }
   </style>
 </head>
-<body class="selection:bg-brand-orange selection:text-white antialiased bg-[#080A0E]" style="min-height: 100%; background-color: rgb(8, 10, 14); color: rgb(226, 232, 240); height: auto !important; overflow-y: auto !important; opacity: 1; visibility: visible !important;">
-<!-- BEGIN: StickyTopNav -->
-<!-- Header bar with logo, smooth-scroll links and instant phone CTA -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#080A0E]/85 backdrop-blur-md border-b border-[#1A202C]">
+<body class="selection:bg-brand-orange selection:text-white antialiased">
+<!-- 1. HEADER & NAVIGATION -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0f17]/90 backdrop-blur-md border-b border-[#1e293b]">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<!-- Brand Logo / Emblem -->
-<a class="flex items-center space-x-3 group" data-purpose="brand-logo" href="#home">
-<div class="w-10 h-10 rounded-lg bg-[#2E4036] flex items-center justify-center shadow-md relative overflow-hidden border border-white/10">
-<span class="text-white font-black text-xl tracking-tighter">B</span>
-<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-sm bg-[#F25C05]"></span>
+<!-- Brand Logo -->
+<a class="flex items-center space-x-3 group" href="#hero">
+<div class="w-10 h-10 rounded-lg bg-[#182a21] border border-[#2e4036] flex items-center justify-center shadow-lg relative overflow-hidden group-hover:border-brand-orange transition-colors">
+<span class="text-white font-extrabold text-xl tracking-tighter">B</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-orange"></span>
 </div>
 <div class="flex flex-col">
 <span class="font-extrabold text-white text-base tracking-wider uppercase group-hover:text-brand-orange transition-colors">B SQUARE</span>
-<span class="text-[9px] font-semibold tracking-widest text-[#8E9AA8] -mt-1">CONSTRUCTION LLP</span>
+<span class="text-[9px] font-semibold tracking-widest text-[#94a3b8] -mt-0.5">CONSTRUCTION LLP</span>
 </div>
 </a>
-<!-- Desktop Navigation Menu -->
-<nav class="hidden md:flex items-center space-x-7" data-purpose="desktop-nav">
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#home">Home</a>
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#features">Features</a>
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#services">Services</a>
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#works">Works</a>
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#specs">Engineering</a>
-<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#contact">Contact</a>
+<!-- Nav Links with Smooth Scroll -->
+<nav class="hidden xl:flex items-center space-x-6">
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#hero">Home</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#capabilities">Capabilities</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#spotlight">Project Spotlight</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#services">Services</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#engineering">Engineering</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#reviews">Testimonials</a>
+<a class="nav-item text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors" href="#contact">Contact</a>
 </nav>
-<!-- Contact Phone & Action Button -->
-<div class="flex items-center space-x-5">
-<a class="hidden lg:flex items-center space-x-2 text-xs font-semibold text-gray-300 hover:text-brand-orange transition-colors" href="tel:+18067754385">
-<svg class="w-4 h-4 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
-<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
-</svg>
-<span class="">(806) 775-4385</span>
+<!-- Phone & Instant Action -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:flex items-center space-x-2 text-xs font-bold text-slate-200 hover:text-brand-orange transition-colors py-2 px-3 rounded-lg border border-[#1e293b] bg-[#111827]" href="tel:+18067754385">
+<span class="material-symbols-outlined text-[16px] text-brand-orange">call</span>
+<span>+1 (806) 775-4385</span>
 </a>
-<a class="bg-brand-orange hover:bg-brand-darkorange text-white text-xs md:text-sm font-bold py-2.5 px-5 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg shadow-orange-900/30 flex items-center space-x-1" href="#contact">
-<span class="">Get Estimate</span>
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-</svg>
+<a class="bg-brand-orange hover:bg-brand-darkorange text-white text-xs font-bold py-2.5 px-5 rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg shadow-orange-600/25 flex items-center space-x-1.5" href="#contact">
+<span>Request Consultation</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
 </div>
 </header>
-<!-- END: StickyTopNav -->
 <main>
-<!-- BEGIN: HeroSection -->
-<!-- Hero with headline, badges, and perspective visual showcase -->
-<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 hero-glow overflow-hidden" id="home">
+<!-- 2. HERO SECTION -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 hero-mesh overflow-hidden" id="hero">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-<!-- Category Badge -->
-<div class="inline-flex items-center space-x-2 bg-brand-card border border-brand-orange/40 rounded-full px-4 py-1.5 mb-6 badge-glow">
-<span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
-<span class="text-xs font-semibold text-brand-orange tracking-wide uppercase">Premier Texas General Contractor</span>
+<!-- Tag Badge inspired by Buildix -->
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-4 py-1.5 mb-6">
+<span class="w-2 h-2 rounded-full bg-brand-orange animate-ping"></span>
+<span class="text-[11px] font-bold text-brand-orange tracking-widest uppercase">Premier Texas General Contractor</span>
 </div>
-<!-- Main Headline -->
-<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto mb-6">
-          Crafting Enduring &amp; Modern Construction With Precision.
-        </h1>
-<!-- Scannable Subheading -->
-<p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed mb-10">
-          Commercial build-outs, custom timber framing, and turnkey residential estates engineered with uncompromising West Texas structural integrity.
-        </p>
-<!-- Call to Action Buttons -->
+<!-- Headline -->
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] max-w-4xl mx-auto mb-6">
+        Crafting Enduring &amp; Modern Construction With Precision.
+      </h1>
+<!-- Subhead -->
+<p class="text-slate-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+        Commercial build-outs, custom timber framing, and turnkey residential estates engineered with uncompromising West Texas structural integrity.
+      </p>
+<!-- Dual CTAs -->
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-<a class="w-full sm:w-auto bg-brand-orange hover:bg-brand-darkorange text-white text-sm font-bold py-3.5 px-8 rounded-full transition-all duration-200 shadow-xl shadow-brand-orange/20" href="#contact">
-            Request Consultation
-          </a>
-<a class="w-full sm:w-auto bg-[#161B24] hover:bg-[#1E2532] text-gray-200 hover:text-white border border-[#273142] text-sm font-semibold py-3.5 px-7 rounded-full transition-all duration-200 flex items-center justify-center space-x-2" href="#works">
-<svg class="w-4 h-4 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
-<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path>
-</svg>
-<span class="">Explore Projects</span>
+<a class="w-full sm:w-auto bg-brand-orange hover:bg-brand-darkorange text-white text-xs sm:text-sm font-bold py-3.5 px-8 rounded-full transition-all duration-200 shadow-xl shadow-orange-600/30 flex items-center justify-center space-x-2" href="#contact">
+<span>Request Consultation</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto bg-[#141b2a] hover:bg-[#1f293d] text-slate-200 hover:text-white border border-[#27354d] text-xs sm:text-sm font-semibold py-3.5 px-8 rounded-full transition-all duration-200 flex items-center justify-center space-x-2" href="#spotlight">
+<span class="material-symbols-outlined text-brand-orange text-sm">play_circle</span>
+<span>Explore Projects</span>
 </a>
 </div>
-<!-- Perspective Visual Gallery Showcase -->
-<div class="relative max-w-6xl mx-auto mt-6" data-purpose="hero-perspective-showcase">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-<!-- Left Feature Card: Commercial Construction Site -->
-<div class="md:col-span-7 rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl relative group">
-<img alt="Master general contractors inspecting structural timber and steel framework at sunset" class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzrwWnDaDGwSLLi20-t5Q9PrVsv77PpsdJmkMkw3mhuhwRnccRo9QuWDMFxYy-VZo5_b9SAgeIQsZzK5ev1B05jDrZbN2ebMoQRQfbcRatvo40woud3DCBP6m1q_MbRwPNTTA4q8cTZDrH6_0AugcuqPrY9T-Z-OCbi0HuJawC7jy7BNgiDyMmiRKX3hmIzlMQTW9RBFSukwMOaEfKdRYgr6BjuoscLRpm6SfPD9obkfm_UGVS42n7gA">
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end text-left">
-<span class="text-xs uppercase font-bold tracking-wider text-brand-orange">Structural Framework</span>
-<h3 class="text-lg font-bold text-white">Commercial Steel &amp; Timber Engineering</h3>
-<p class="text-xs text-gray-300">Ground-up commercial facilities built with rigorous site supervision.</p>
+<!-- Featured Imagery Showcase with High-Resolution Photography Assets -->
+<div class="relative max-w-6xl mx-auto mt-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Left Feature: Commercial Steel & Timber Engineering -->
+<div class="md:col-span-7 rounded-2xl overflow-hidden border border-[#1f293d] bg-[#111827] shadow-2xl relative group min-h-[340px] md:min-h-[420px] flex flex-col justify-end">
+<img alt="Commercial Steel &amp; Timber Engineering" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1VV3ItdfcfFxSPXCjXXgkCNpsi0rXULX1WJAqt41QRrk7Nuj-rCcPdvKEQHiUKDoFM1bSgtPM0dDvkkYdqW3qk-d2-g2cPHLv72ECjIr78YbDc5iuSbCFdMug61NGjZswu3iFeDJhBAJ0C0IcN03njojHB6xKmCvrJjBCc13cAaRc5Iyc6hHe33LifZGXczY3Q6pe3wvw4h3uob6ZHmOlhYDuZElH6-6lvCHmbrWpiwuBrVddg5dH5QcWv1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="relative z-10 p-6 sm:p-8 text-left">
+<span class="inline-block text-[10px] uppercase font-bold tracking-widest text-brand-orange px-2.5 py-1 rounded bg-black/60 mb-2 border border-brand-orange/30">Structural Framework</span>
+<h3 class="text-xl sm:text-2xl font-bold text-white mb-1">Commercial Steel &amp; Timber Engineering</h3>
+<p class="text-xs sm:text-sm text-slate-300 max-w-lg">Ground-up commercial facilities built with rigorous site supervision and architect-grade execution.</p>
 </div>
 </div>
-<!-- Right Feature Card: Modern Architectural Estate -->
-<div class="md:col-span-5 rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl relative group">
-<img alt="Modern luxury architectural home exterior built with timber and glass in Texas" class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDni69FW2TkK610vH2kZrDi6nuN1hcgzPP5VMW_-2F9dZMI8g3lwmn7nNcGNeqCAnRpn2GKCCO0VVifMhUyoW5SV5WyaSDE2070GIWzZ0ESQFzvKRhwZvRRi9xgb-bnXq7LkusbmN8i8AT4xuv55NqzqNbsZWLcWpKFFDQg0ciPSlLhmaztpT4rQ8YfiQbFfmI_H32rv3Pk3fW2qjM1XR14q-7TNkvrVIpXwI-TgFKhRiZBuuaRKDkerA">
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end text-left">
-<span class="text-xs uppercase font-bold tracking-wider text-brand-orange">Luxury Residential</span>
-<h3 class="text-lg font-bold text-white">Turnkey Custom Living Estates</h3>
-<p class="text-xs text-gray-300">Engineered thermal envelopes with panoramic glazing.</p>
+<!-- Right Feature: Turnkey Custom Living Estates -->
+<div class="md:col-span-5 rounded-2xl overflow-hidden border border-[#1f293d] bg-[#111827] shadow-2xl relative group min-h-[340px] md:min-h-[420px] flex flex-col justify-end">
+<img alt="Turnkey Custom Living Estates" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1Xkizw6gMoymETqYhfBHZuHC2WWGL7WKqJigQyZV900YmUbYawn4-Unavqa3rdbYRrH95cZi-pjzctGKfusRM8QLKxUmvK3FMQPIjuOasPdO3P131lKtPO9YAy7vG6k0FHI2vPODKI3uYv8s8lC9i4yNHcCsQ71p4m51qnR2YM95cBT7LC5XjeXlKcG4fzUYNC1wFvzmuCkPxXe_YwU-4wRTWbNb5smlwJE3kJrjKemxosloZkGc838RSph"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="relative z-10 p-6 sm:p-8 text-left">
+<span class="inline-block text-[10px] uppercase font-bold tracking-widest text-brand-orange px-2.5 py-1 rounded bg-black/60 mb-2 border border-brand-orange/30">Luxury Residential</span>
+<h3 class="text-xl sm:text-2xl font-bold text-white mb-1">Turnkey Custom Living Estates</h3>
+<p class="text-xs sm:text-sm text-slate-300 max-w-md">Engineered thermal envelopes with panoramic glazing, limestone textures, and bespoke architecture.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: HeroSection -->
-<!-- BEGIN: CoreMetricsSection -->
-<!-- High-impact numbers and reliability indicators matching Buildix style -->
-<section class="py-20 bg-[#0B0D11] border-y border-[#181E29]" id="features">
+<!-- 3. CORE CAPABILITIES & PROVEN METRICS -->
+<section class="py-20 bg-[#0d121c] border-y border-[#1e293b]" id="capabilities">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-14">
-<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
-<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Core Capabilities</span>
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-3.5 py-1 mb-3">
+<span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Core Capabilities</span>
 </div>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Discover Our Proven Execution</h2>
-<p class="text-sm text-brand-muted mt-2">Delivering dependable industrial strength and architectural refinement.</p>
+<p class="text-sm text-slate-400 mt-2">Delivering dependable industrial strength and architectural refinement across Texas.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Metric Card 1 -->
-<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
-<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
-<span class="">25</span><span class="text-brand-orange">+</span>
+<!-- Metric 1 -->
+<div class="glass-card rounded-2xl p-8 text-center relative overflow-hidden">
+<div class="w-12 h-12 mx-auto rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div class="text-4xl sm:text-5xl font-extrabold text-white mb-2 flex items-center justify-center tracking-tight">
+<span>25</span><span class="text-brand-orange">+</span>
 </div>
 <h3 class="text-base font-bold text-white mb-2">Years of Field Mastery</h3>
-<p class="text-sm text-gray-400">Master superintendents managing safety, code compliance, and subcontractor flow on every commercial &amp; residential build.</p>
+<p class="text-xs text-slate-400 leading-relaxed">
+            Master superintendents managing safety, code compliance, and subcontractor flow on every commercial &amp; residential build.
+          </p>
 </div>
-<!-- Metric Card 2 -->
-<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
-<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
-<span class="">380</span><span class="text-brand-orange">+</span>
+<!-- Metric 2 -->
+<div class="glass-card rounded-2xl p-8 text-center relative overflow-hidden">
+<div class="w-12 h-12 mx-auto rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">apartment</span>
+</div>
+<div class="text-4xl sm:text-5xl font-extrabold text-white mb-2 flex items-center justify-center tracking-tight">
+<span>380</span><span class="text-brand-orange">+</span>
 </div>
 <h3 class="text-base font-bold text-white mb-2">Structures Delivered</h3>
-<p class="text-sm text-gray-400">Ground-up commercial hubs, heavy timber pavilions, and luxury custom homes built across Lubbock and West Texas.</p>
+<p class="text-xs text-slate-400 leading-relaxed">
+            Ground-up commercial hubs, heavy timber pavilions, and luxury custom homes built across Lubbock and West Texas.
+          </p>
 </div>
-<!-- Metric Card 3 -->
-<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
-<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
-<span class="">100</span><span class="text-brand-orange">%</span>
+<!-- Metric 3 -->
+<div class="glass-card rounded-2xl p-8 text-center relative overflow-hidden">
+<div class="w-12 h-12 mx-auto rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">price_check</span>
+</div>
+<div class="text-4xl sm:text-5xl font-extrabold text-white mb-2 flex items-center justify-center tracking-tight">
+<span>100</span><span class="text-brand-orange">%</span>
 </div>
 <h3 class="text-base font-bold text-white mb-2">On-Budget Guarantee</h3>
-<p class="text-sm text-gray-400">Exhaustive itemized bids with zero surprise change orders and transparent contractor-to-client financial reporting.</p>
+<p class="text-xs text-slate-400 leading-relaxed">
+            Exhaustive itemized bids with zero surprise change orders and transparent contractor-to-client financial reporting.
+          </p>
 </div>
 </div>
 </div>
 </section>
-<!-- END: CoreMetricsSection -->
-<!-- BEGIN: ShowcaseViewerSection -->
-<!-- Interactive portfolio showcase with a video/project preview feel -->
-<section class="py-24 bg-[#080A0E] relative" id="works">
+<!-- 4. PROJECT SPOTLIGHT -->
+<section class="py-24 bg-[#0b0f17] relative overflow-hidden" id="spotlight">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-12">
-<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
-<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Project Spotlight</span>
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-3.5 py-1 mb-3">
+<span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Project Spotlight</span>
 </div>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Lubbock Commercial Hub &amp; Timber Pavilion</h2>
-<p class="text-sm text-brand-muted mt-2">A landmark multi-phase hybrid steel and heavy timber build by B Square Construction LLP.</p>
+<p class="text-sm text-slate-400 mt-2">A landmark multi-phase hybrid steel and heavy timber build by B Square Construction LLP.</p>
 </div>
-<div class="relative rounded-2xl overflow-hidden border border-brand-border bg-[#101319] shadow-2xl max-w-5xl mx-auto">
-<!-- Image Element -->
-<div class="relative w-full aspect-video">
-<img alt="Custom modern timber beams and steel framework under construction in Texas at golden hour" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDPBgVDEMySLulaPe5qDgBIxA45gki3OYKyfEDk7oKIQof5BP1ax5K16Qx5TnBAMsv6VU7Sy1VX5Z9W4UK_LZ8I-Z7bZEhIsmW7ll6WBEEttrcw-M3ctQ5oNAMiZ3BIKqI0EmV35-_qpVOe-6-da3Y9CtX_vi5tuVUdSUD7uqCcRz9f3U3_pI3H7G5XPpA5RyTGeUQzyAAEyv3o7T7296SBnjThbKu6evXPm9uIsk0mGeM_fvROaslA">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center group cursor-pointer" onclick="alert('Viewing 3D Structural Walkthrough for Lubbock Commercial Hub.')">
-<div class="w-20 h-20 rounded-full bg-brand-orange flex items-center justify-center shadow-xl shadow-brand-orange/40 transform group-hover:scale-110 transition-transform duration-300">
-<svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path>
-</svg>
+<div class="relative rounded-2xl overflow-hidden border border-[#1f293d] bg-[#111827] shadow-2xl max-w-5xl mx-auto">
+<!-- Interactive media showcase frame -->
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Lubbock Commercial Hub &amp; Timber Pavilion Active Construction" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1WNrwjbRSDdCYrsCXsUxGsoo80UdKom9q-mOnfKi-UG8J5hL5cnG-7rgoQ3-euMJju8QJa6cdufmVDp0SrSdwfY5MimTfkxEb0a_FX9l9xrBpZs9FqBXlUENW4CAazNL7EzzGhYUSkBPHjQLxk9R_O5pe7G-ojvmuJBc1e7fBBExrQ_ukAItGUW4wuWS7aOorWWRzglwU9jGYt4tsQUJXX_zCUnYiZBCFIcI5GidIZlzj_LLgbT3bAdYVQx"/>
+<div class="absolute inset-0 bg-black/45 flex items-center justify-center group cursor-pointer" onclick="alert('Viewing structural engineering inspection walkthrough for Lubbock Commercial Hub.')">
+<div class="w-20 h-20 rounded-full bg-brand-orange pulse-glow flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl ml-1">play_arrow</span>
 </div>
 </div>
 </div>
-<!-- Bottom Meta Bar -->
-<div class="p-6 bg-[#13171F] flex flex-col md:flex-row md:items-center justify-between border-t border-brand-border gap-4">
+<!-- Specification Badges & Meta -->
+<div class="p-6 bg-[#111827] flex flex-col md:flex-row md:items-center justify-between border-t border-[#1f293d] gap-4">
 <div>
-<span class="text-xs font-semibold text-brand-orange uppercase">Active Build Showcase</span>
-<p class="text-white font-bold text-base">Heavy Timber &amp; Structural Steel Hybrid Assembly</p>
+<span class="text-[10px] font-bold text-brand-orange uppercase tracking-widest">Active Build Showcase</span>
+<p class="text-white font-bold text-base mt-0.5">Heavy Timber &amp; Structural Steel Hybrid Assembly</p>
 </div>
-<div class="flex items-center space-x-3 text-xs text-gray-300">
-<span class="px-3 py-1 bg-black/40 rounded-full border border-gray-700">Lubbock, TX</span>
-<span class="px-3 py-1 bg-black/40 rounded-full border border-gray-700">Turnkey Phase II</span>
-<a class="text-brand-orange hover:underline font-bold" href="#contact">Request Specs →</a>
+<div class="flex flex-wrap items-center gap-2.5 text-xs text-slate-300">
+<span class="px-3 py-1 bg-black/50 rounded-full border border-slate-700 font-semibold">Lubbock, TX</span>
+<span class="px-3 py-1 bg-black/50 rounded-full border border-slate-700 font-semibold">Turnkey Phase II</span>
+<a class="px-4 py-1 bg-brand-orange text-white rounded-full font-bold hover:bg-brand-darkorange transition-colors inline-flex items-center space-x-1" href="#contact">
+<span>Request Specs</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ShowcaseViewerSection -->
-<!-- BEGIN: ServicesCollectionSection -->
-<!-- Ready-to-build service matrix matching the Buildix template cards -->
-<section class="py-24 bg-[#0B0D11] border-t border-[#181E29]" id="services">
+<!-- 5. END-TO-END GENERAL CONTRACTING SERVICES -->
+<section class="py-24 bg-[#0d121c] border-t border-[#1e293b]" id="services">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-2xl mx-auto mb-10">
-<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
-<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Our Scope</span>
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-3.5 py-1 mb-3">
+<span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Our Scope</span>
 </div>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-white">End-to-End General Contracting Services</h2>
-<p class="text-sm text-brand-muted mt-2">Comprehensive construction management from foundation to handover.</p>
+<p class="text-sm text-slate-400 mt-2">Comprehensive construction management from initial foundation engineering to turnkey handover.</p>
 </div>
-<!-- Filter / Category Tabs -->
-<div class="flex flex-wrap items-center justify-center gap-2 mb-12">
-<button class="service-tab-btn px-4 py-1.5 text-xs font-bold rounded-full bg-brand-orange text-white" onclick="filterServices('all')">All Services</button>
-<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('commercial')">Commercial</button>
-<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('residential')">Residential</button>
-<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('framing')">Timber &amp; Framing</button>
-<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('renovation')">Renovations</button>
+<!-- Interactive Filter Tabs -->
+<div class="flex flex-wrap items-center justify-center gap-2.5 mb-12" id="serviceTabs">
+<button class="service-tab active px-4 py-1.5 text-xs font-bold rounded-full bg-brand-orange text-white shadow-md shadow-orange-600/30 transition-all" onclick="filterServices('all', this)">All Services</button>
+<button class="service-tab px-4 py-1.5 text-xs font-medium rounded-full bg-[#141b2a] text-slate-400 hover:text-white border border-[#27354d] transition-all" onclick="filterServices('commercial', this)">Commercial</button>
+<button class="service-tab px-4 py-1.5 text-xs font-medium rounded-full bg-[#141b2a] text-slate-400 hover:text-white border border-[#27354d] transition-all" onclick="filterServices('residential', this)">Residential</button>
+<button class="service-tab px-4 py-1.5 text-xs font-medium rounded-full bg-[#141b2a] text-slate-400 hover:text-white border border-[#27354d] transition-all" onclick="filterServices('framing', this)">Timber &amp; Framing</button>
+<button class="service-tab px-4 py-1.5 text-xs font-medium rounded-full bg-[#141b2a] text-slate-400 hover:text-white border border-[#27354d] transition-all" onclick="filterServices('renovation', this)">Renovations</button>
 </div>
-<!-- Grid of Service Cards -->
+<!-- Service Cards Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
 <!-- Service Card 1 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="commercial">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">domain</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Commercial Build-Outs</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Retail facades, professional office parks, medical suites, and industrial shell fit-outs executed to municipal specifications.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Retail facades, professional office parks, medical suites, and industrial shell fit-outs executed strictly to municipal specifications.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Turnkey Execution</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Turnkey Execution
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 <!-- Service Card 2 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="framing">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="framing">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">carpenter</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Custom Timber &amp; Heavy Framing</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Exposed architectural glue-lam timber, engineered truss systems, steel-tie framing, and high-load load-bearing woodwork.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Exposed architectural glue-lam timber, engineered truss systems, steel-tie framing, and heavy load-bearing architectural woodwork.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Master Carpenters</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Master Carpenters
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 <!-- Service Card 3 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="residential">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="residential">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">villa</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Luxury Residential Construction</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Architect-designed private estates engineered with masonry, glass walls, and structural resilience for the West Texas climate.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Architect-designed private estates engineered with masonry, glass curtain walls, and structural resilience tailored to the West Texas climate.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Custom Architecture</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Custom Architecture
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 <!-- Service Card 4 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="commercial">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">roofing</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Structural Envelopes &amp; Roofing</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Standing-seam architectural metal roofs, industrial flat TPO systems, impact warranties, and moisture barrier systems.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Standing-seam architectural metal roofs, industrial flat TPO systems, hail impact warranties, and advanced moisture barrier insulation.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Weather-Shielded</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Weather-Shielded
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 <!-- Service Card 5 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="commercial">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">assignment_turned_in</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Site Feasibility &amp; Permitting</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Lubbock zoning approvals, soil geotechnical analysis, utility tap access planning, and construction blueprint audits.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Lubbock zoning approvals, soil geotechnical analysis, utility tap access planning, and construction blueprint code compliance audits.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Code Certified</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Code Certified
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 <!-- Service Card 6 -->
-<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="renovation">
+<div class="service-card glass-card rounded-xl p-6 flex flex-col justify-between" data-category="renovation">
 <div>
-<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="w-11 h-11 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<span class="material-symbols-outlined text-2xl">handyman</span>
 </div>
 <h3 class="text-lg font-bold text-white mb-2">Tenant Overhauls &amp; Renovations</h3>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Complete structural re-configurations, modern facades, MEP modernisation, and high-efficiency building retrofits.</p>
+<p class="text-xs text-slate-400 leading-relaxed mb-4">Complete structural re-configurations, modern facades, MEP engineering modernisation, and high-efficiency building retrofits.</p>
 </div>
-<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
-<span class="text-emerald-400 font-semibold">● Fast Turnaround</span>
-<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+<div class="pt-4 border-t border-[#1f293d] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Fast Turnaround
+            </span>
+<a class="text-brand-orange font-bold hover:underline flex items-center" href="#contact">Consult →</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ServicesCollectionSection -->
-<!-- BEGIN: SpecificationsRigourSection -->
-<!-- Blueprint, engineering standards, and contractor collaboration -->
-<section class="py-24 bg-[#080A0E] relative overflow-hidden" id="specs">
+<!-- 6. ENGINEERING RIGOR & CLIMATE RESILIENCE -->
+<section class="py-24 bg-[#0b0f17] relative overflow-hidden" id="engineering">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Left Column: Checklists and guarantees -->
+<!-- Left: Specifications & Guarantees -->
 <div class="lg:col-span-6 space-y-6">
-<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1">
-<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Engineering Rigor</span>
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-3.5 py-1">
+<span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Engineering Rigor</span>
 </div>
 <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-              Built to Outlast Texas Climate Extremes.
-            </h2>
-<p class="text-sm text-gray-400 leading-relaxed">
-              Every foundation, framing header, and roofing tie-down is engineered specifically to withstand 70+ mph High Plains winds, thermal expansion cycles, and caliche soil dynamics.
-            </p>
+            Built to Outlast Texas Climate Extremes.
+          </h2>
+<p class="text-sm text-slate-400 leading-relaxed">
+            Every foundation, framing header, and roofing tie-down is engineered specifically to withstand 70+ mph High Plains winds, thermal expansion cycles, and caliche soil dynamics.
+          </p>
 <div class="space-y-4 pt-2">
+<!-- Spec 1 -->
 <div class="flex items-start space-x-3.5">
 <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="material-symbols-outlined text-[16px]">check</span>
 </div>
 <div>
 <h4 class="text-sm font-bold text-white">Class-A Certified General Contracting</h4>
-<p class="text-xs text-gray-400">Fully licensed, bonded, and insured with multi-million dollar liability protection.</p>
+<p class="text-xs text-slate-400">Fully licensed, bonded, and insured with multi-million dollar liability protection.</p>
 </div>
 </div>
+<!-- Spec 2 -->
 <div class="flex items-start space-x-3.5">
 <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="material-symbols-outlined text-[16px]">check</span>
 </div>
 <div>
 <h4 class="text-sm font-bold text-white">Hurricane-Grade Anchor Bolts &amp; Steel Plates</h4>
-<p class="text-xs text-gray-400">Redundant framing anchors preventing structural shifting under gust forces.</p>
+<p class="text-xs text-slate-400">Redundant framing anchors preventing structural shifting under intense gust forces.</p>
 </div>
 </div>
+<!-- Spec 3 -->
 <div class="flex items-start space-x-3.5">
 <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="material-symbols-outlined text-[16px]">check</span>
 </div>
 <div>
 <h4 class="text-sm font-bold text-white">10-Year Transferable Structural Warranty</h4>
-<p class="text-xs text-gray-400">Guaranteed peace of mind backed by documented third-party engineering audits.</p>
+<p class="text-xs text-slate-400">Guaranteed peace of mind backed by documented third-party engineering audits.</p>
 </div>
 </div>
 </div>
 <div class="pt-4">
 <a class="inline-flex items-center space-x-2 text-sm font-bold text-brand-orange hover:text-white transition-colors" href="#contact">
-<span class="">Request Blueprint Review Session</span>
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Request Blueprint Review Session</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
 </div>
-<!-- Right Column: Superintendent Photo on Job Site -->
+<!-- Right: 4K On-site Superintendent Management Photo -->
 <div class="lg:col-span-6">
-<div class="relative rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl">
-<img alt="Contractor and superintendent reviewing blueprints on site in Lubbock Texas" class="w-full h-[440px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhkIJdLYisxkHu5rwDUEuPHpIpSMAcGbaDsjsuNvC8cK64qfmcDLSN7TwcyFYFVKZn58yTLBwPYpYSRITU7h5sldQJ2fqg27evyyueFiNBYiMxkpkTyHJQ25pLXC6VjZ_mKF2ZI2If3heJJdycThZPYgyMkMSEQmUOVjaRnT5xvldhPgZvAlUH3ZzVkWN15oGIuLbOlo2B3_vvAdStdi2sjNBtex1FILNB3wfEyiV8_1Gdqi-mOmyxQ">
+<div class="relative rounded-2xl overflow-hidden border border-[#1f293d] bg-[#111827] shadow-2xl">
+<img alt="Contractor and superintendent reviewing blueprints on site in Lubbock Texas" class="w-full h-[420px] md:h-[460px] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1UAg34T4d1t1ngDagQHok5LtoMdA9P0FaaSuKwmH-v4Xs52bMp5FlkE9EaS0BZ3bsdz9R2Qr881Pqkkr5LVUNUi0NOBz-VMdrnou2gRb5FKEmPQBZ8pMPgnegzmWX3d-ZAEdONdMDzK9hsC8MSm_DQenTEyiulmQK_0D1l_1vjR9njCkAzo6NhKFfR1ZSbkw4TWCEVMfykHg8vMn0fXoSGKSk7chNNTSZw6e2HnPhKDOhPtGAYtbTKgD49k"/>
 <div class="absolute bottom-4 left-4 right-4 bg-black/85 backdrop-blur-md border border-white/10 rounded-xl p-4 flex items-center justify-between">
 <div>
-<span class="text-[10px] uppercase font-bold text-brand-orange tracking-widest">Site Management</span>
+<span class="text-[9px] uppercase font-bold text-brand-orange tracking-widest">Site Management</span>
 <p class="text-xs font-semibold text-white">Active On-Site Blueprint Coordination</p>
-<p class="text-[11px] text-gray-400">Lubbock, Texas Territory</p>
+<p class="text-[11px] text-slate-400">Lubbock, Texas Territory</p>
 </div>
-<div class="bg-brand-orange text-white text-xs font-bold px-3 py-1.5 rounded-lg">
-                  100% Code Passed
-                </div>
+<div class="bg-brand-orange text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">
+                100% Code Passed
+              </div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: SpecificationsRigourSection -->
-<!-- BEGIN: TestimonialsSection -->
-<!-- Client reviews and local trust metrics -->
-<section class="py-20 bg-[#0B0D11] border-t border-[#181E29]">
+<!-- 7. TESTIMONIALS & CLIENT REVIEWS -->
+<section class="py-20 bg-[#0d121c] border-t border-[#1e293b]" id="reviews">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center max-w-xl mx-auto mb-14">
 <div class="inline-flex items-center space-x-1.5 text-amber-400 mb-2">
-<span class="">★★★★★</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
 <span class="text-xs font-bold text-white ml-2">4.9 / 5.0 Google Verified</span>
 </div>
 <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Trusted by Texas Property Leaders</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Testimonial 1 -->
-<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
-<p class="text-xs text-gray-300 leading-relaxed mb-4">
-              "B Square Construction managed our retail strip expansion in Lubbock. Their superintendent was on-site every single morning, and we finished two weeks ahead of schedule with zero price inflations."
-            </p>
-<div class="flex items-center space-x-3">
-<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
-                MC
-              </div>
+<!-- Review 1 -->
+<div class="glass-card p-6 rounded-xl flex flex-col justify-between">
+<p class="text-xs text-slate-300 leading-relaxed mb-6 italic">
+            "B Square Construction managed our retail strip expansion in Lubbock. Their superintendent was on-site every single morning, and we finished two weeks ahead of schedule with zero price inflations."
+          </p>
+<div class="flex items-center space-x-3 pt-4 border-t border-[#1f293d]">
+<div class="w-10 h-10 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+              MC
+            </div>
 <div>
 <h4 class="text-xs font-bold text-white">Marcus Campbell</h4>
-<p class="text-[11px] text-gray-400">Commercial Real Estate Owner, West Texas</p>
+<p class="text-[11px] text-slate-400">Commercial Real Estate Owner, West Texas</p>
 </div>
 </div>
 </div>
-<!-- Testimonial 2 -->
-<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
-<p class="text-xs text-gray-300 leading-relaxed mb-4">
-              "The timber and steel combination on our custom estate is breathtaking. B Square's craftsmanship and structural knowledge give us total confidence even during Lubbock's severe spring windstorms."
-            </p>
-<div class="flex items-center space-x-3">
-<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
-                DH
-              </div>
+<!-- Review 2 -->
+<div class="glass-card p-6 rounded-xl flex flex-col justify-between">
+<p class="text-xs text-slate-300 leading-relaxed mb-6 italic">
+            "The timber and steel combination on our custom estate is breathtaking. B Square's craftsmanship and structural knowledge give us total confidence even during Lubbock's severe spring windstorms."
+          </p>
+<div class="flex items-center space-x-3 pt-4 border-t border-[#1f293d]">
+<div class="w-10 h-10 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+              DH
+            </div>
 <div>
 <h4 class="text-xs font-bold text-white">David &amp; Sarah Hayes</h4>
-<p class="text-[11px] text-gray-400">Residential Homeowners, Lubbock, TX</p>
+<p class="text-[11px] text-slate-400">Residential Homeowners, Lubbock, TX</p>
 </div>
 </div>
 </div>
-<!-- Testimonial 3 -->
-<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
-<p class="text-xs text-gray-300 leading-relaxed mb-4">
-              "Their team respects timelines and provides itemized line-item invoicing that makes municipal reporting smooth. We consider B Square our first-call general contractor for all capital projects."
-            </p>
-<div class="flex items-center space-x-3">
-<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
-                RL
-              </div>
+<!-- Review 3 -->
+<div class="glass-card p-6 rounded-xl flex flex-col justify-between">
+<p class="text-xs text-slate-300 leading-relaxed mb-6 italic">
+            "Their team respects timelines and provides itemized line-item invoicing that makes municipal reporting smooth. We consider B Square our first-call general contractor for all capital projects."
+          </p>
+<div class="flex items-center space-x-3 pt-4 border-t border-[#1f293d]">
+<div class="w-10 h-10 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+              RL
+            </div>
 <div>
 <h4 class="text-xs font-bold text-white">Rachel Lawson</h4>
-<p class="text-[11px] text-gray-400">Facilities Director, Lubbock Tech Hub</p>
+<p class="text-[11px] text-slate-400">Facilities Director, Lubbock Tech Hub</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: TestimonialsSection -->
-<!-- BEGIN: ContactAndEstimateSection -->
-<!-- Direct phone, hours, Google Map link, and consultation inquiry form -->
-<section class="py-24 bg-[#080A0E] border-t border-[#181E29] relative" id="contact">
+<!-- 8. CONTACT & CONSULTATION REQUEST FORM -->
+<section class="py-24 bg-[#0b0f17] border-t border-[#1e293b] relative" id="contact">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 <!-- Contact Information Side -->
 <div class="lg:col-span-5 space-y-6">
-<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1">
-<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Start Your Build</span>
+<div class="inline-flex items-center space-x-2 badge-pill rounded-full px-3.5 py-1">
+<span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Start Your Build</span>
 </div>
 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
-              Request Your Project Consultation
-            </h2>
-<p class="text-sm text-gray-400">
-              Speak directly with an executive general contractor. We review your land, blueprints, budget parameters, and deliver a comprehensive initial roadmap.
-            </p>
+            Request Your Project Consultation
+          </h2>
+<p class="text-sm text-slate-400">
+            Speak directly with an executive general contractor. We review your land, blueprints, budget parameters, and deliver a comprehensive initial roadmap.
+          </p>
 <div class="space-y-4 pt-4">
 <!-- Direct Phone -->
-<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<div class="flex items-center space-x-4 bg-[#111827] border border-[#1f293d] p-4 rounded-xl">
 <div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+<span class="material-symbols-outlined text-xl">phone_in_talk</span>
 </div>
 <div>
-<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Direct Phone</span>
-<p class="text-sm font-bold text-white"><a class="hover:text-brand-orange transition-colors" href="tel:+18067754385">+1 (806) 775-4385</a></p>
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Direct Phone</span>
+<p class="text-sm font-bold text-white">
+<a class="hover:text-brand-orange transition-colors" href="tel:+18067754385">+1 (806) 775-4385</a>
+</p>
 </div>
 </div>
 <!-- Operating Hours -->
-<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<div class="flex items-center space-x-4 bg-[#111827] border border-[#1f293d] p-4 rounded-xl">
 <div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="material-symbols-outlined text-xl">schedule</span>
 </div>
 <div>
-<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Operating Hours</span>
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Operating Hours</span>
 <p class="text-xs font-bold text-white">Weekdays 8:00 AM – 5:00 PM</p>
-<p class="text-[11px] text-gray-400">Weekends Closed</p>
+<p class="text-[11px] text-slate-400">Weekends Closed</p>
 </div>
 </div>
-<!-- Location & Map Link -->
-<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<!-- Regional HQ -->
+<div class="flex items-center space-x-4 bg-[#111827] border border-[#1f293d] p-4 rounded-xl">
 <div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="material-symbols-outlined text-xl">location_on</span>
 </div>
 <div>
-<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Regional Headquarters</span>
+<span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Regional Headquarters</span>
 <p class="text-xs font-bold text-white">Lubbock &amp; West Texas Region</p>
 <a class="text-[11px] text-brand-orange hover:underline font-semibold" href="https://maps.app.goo.gl/VXRWgNS3AFtcR1NY7" rel="noopener noreferrer" target="_blank">
-                    Open in Google Maps ↗
-                  </a>
+                  Open in Google Maps ↗
+                </a>
 </div>
 </div>
 </div>
 </div>
 <!-- Contact Form Side -->
 <div class="lg:col-span-7">
-<div class="bg-[#121620] border border-brand-border rounded-2xl p-6 sm:p-8 shadow-2xl relative">
-<h3 class="text-lg font-bold text-white mb-2">Send Project Details</h3>
-<p class="text-xs text-gray-400 mb-6">Our senior estimating team responds within one business day.</p>
+<div class="bg-[#111827] border border-[#1f293d] rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+<h3 class="text-lg font-bold text-white mb-1">Send Project Details</h3>
+<p class="text-xs text-slate-400 mb-6">Our senior estimating team responds within one business day.</p>
 <form class="space-y-4" id="consultationForm" onsubmit="handleFormSubmit(event)">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
-<label class="block text-xs font-medium text-gray-300 mb-1" for="clientName">Full Name *</label>
-<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientName" placeholder="e.g. John Miller" required="" type="text">
+<label class="block text-xs font-medium text-slate-300 mb-1" for="clientName">Full Name *</label>
+<input class="w-full bg-[#0a0f18] border border-slate-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientName" placeholder="e.g. John Miller" required="" type="text"/>
 </div>
 <div>
-<label class="block text-xs font-medium text-gray-300 mb-1" for="clientPhone">Phone Number *</label>
-<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientPhone" placeholder="(806) 000-0000" required="" type="tel">
+<label class="block text-xs font-medium text-slate-300 mb-1" for="clientPhone">Phone Number *</label>
+<input class="w-full bg-[#0a0f18] border border-slate-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientPhone" placeholder="+1 (806) 000-0000" required="" type="tel"/>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
-<label class="block text-xs font-medium text-gray-300 mb-1" for="clientEmail">Email Address *</label>
-<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientEmail" placeholder="john@company.com" required="" type="email">
+<label class="block text-xs font-medium text-slate-300 mb-1" for="clientEmail">Email Address *</label>
+<input class="w-full bg-[#0a0f18] border border-slate-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientEmail" placeholder="john@company.com" required="" type="email"/>
 </div>
 <div>
-<label class="block text-xs font-medium text-gray-300 mb-1" for="projectType">Project Classification *</label>
-<select class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectType" required="">
+<label class="block text-xs font-medium text-slate-300 mb-1" for="projectType">Project Classification *</label>
+<select class="w-full bg-[#0a0f18] border border-slate-700 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectType" required="">
 <option value="Commercial Build-Out">Commercial Build-Out</option>
 <option value="Custom Luxury Residence">Custom Luxury Residence</option>
 <option value="Timber &amp; Heavy Framing">Timber &amp; Heavy Framing</option>
@@ -558,160 +617,149 @@
 </div>
 </div>
 <div>
-<label class="block text-xs font-medium text-gray-300 mb-1" for="projectScope">Scope Details &amp; Target Timeline</label>
-<textarea class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectScope" placeholder="Briefly describe your site location, square footage, architectural drawings status, and preferred completion timeline..." rows="3"></textarea>
+<label class="block text-xs font-medium text-slate-300 mb-1" for="projectScope">Project Details / Scope</label>
+<textarea class="w-full bg-[#0a0f18] border border-slate-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectScope" placeholder="Briefly describe your site location, square footage, architectural drawings status, and target timeline..." rows="3"></textarea>
 </div>
-<button class="w-full bg-brand-orange hover:bg-brand-darkorange text-white text-xs sm:text-sm font-bold py-3.5 px-6 rounded-lg transition-all duration-200 transform active:scale-[0.99] shadow-lg shadow-brand-orange/25" type="submit">
-                  Submit Project Consultation
-                </button>
-<p class="text-[10px] text-gray-500 text-center">Your privacy is respected. No spam, ever. Standard phone rates apply.</p>
+<button class="w-full bg-brand-orange hover:bg-brand-darkorange text-white text-xs sm:text-sm font-bold py-3.5 px-6 rounded-lg transition-all duration-200 transform active:scale-[0.99] shadow-lg shadow-orange-600/30 flex items-center justify-center space-x-2" type="submit">
+<span>Submit Project Consultation</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+<p class="text-[10px] text-slate-500 text-center">Your privacy is respected. No spam, ever. Standard phone rates apply.</p>
 </form>
-<!-- Form Success Notification Container -->
-<div class="hidden absolute inset-0 bg-[#121620]/95 rounded-2xl flex flex-col items-center justify-center p-6 text-center backdrop-blur-sm transition-all duration-300" id="formSuccessToast">
+<!-- Success Overlay -->
+<div class="hidden absolute inset-0 bg-[#111827]/98 rounded-2xl flex flex-col items-center justify-center p-6 text-center backdrop-blur-sm transition-all duration-300" id="formSuccessToast">
 <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-3">
-<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="material-symbols-outlined text-3xl">task_alt</span>
 </div>
 <h4 class="text-base font-bold text-white mb-1">Inquiry Dispatched Successfully!</h4>
-<p class="text-xs text-gray-300 max-w-sm mb-4">A senior estimator from B Square Construction LLP will call you during operating hours (M–F 8 AM–5 PM).</p>
-<button class="px-4 py-2 bg-brand-card border border-gray-700 hover:border-brand-orange rounded-lg text-xs text-white" onclick="resetFormState()">Send Another Message</button>
+<p class="text-xs text-slate-300 max-w-sm mb-4">A senior estimator from B Square Construction LLP will call you during business hours (M–F 8 AM–5 PM).</p>
+<button class="px-4 py-2 bg-[#1a2333] border border-slate-700 hover:border-brand-orange rounded-lg text-xs text-white" onclick="resetFormState()">Send Another Message</button>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ContactAndEstimateSection -->
 </main>
-<!-- BEGIN: MainFooter -->
-<!-- Clean dark footer matching the Buildix finish with links and licensing -->
-<footer class="bg-[#05070A] border-t border-[#141A24] py-14 text-xs text-gray-400">
+<!-- 9. FOOTER -->
+<footer class="bg-[#070a10] border-t border-[#172030] py-14 text-xs text-slate-400">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-<!-- Company Identity -->
+<!-- Brand Column -->
 <div class="md:col-span-1 space-y-3">
 <div class="flex items-center space-x-2">
-<div class="w-7 h-7 rounded bg-[#2E4036] flex items-center justify-center">
+<div class="w-8 h-8 rounded-lg bg-[#182a21] border border-[#2e4036] flex items-center justify-center">
 <span class="text-white font-black text-sm">B</span>
 </div>
-<span class="font-bold text-white text-sm tracking-wide">B SQUARE CONSTRUCTION</span>
+<span class="font-extrabold text-white text-sm tracking-wide">B SQUARE CONSTRUCTION</span>
 </div>
-<p class="text-[11px] text-gray-400 leading-relaxed">
-            Leading general contracting firm delivering commercial frameworks, luxury custom living spaces, and engineered timber builds in Lubbock &amp; West Texas.
-          </p>
+<p class="text-[11px] text-slate-400 leading-relaxed">
+          Premier general contracting firm delivering commercial frameworks, luxury custom living spaces, and engineered heavy timber builds in Lubbock &amp; West Texas.
+        </p>
 </div>
-<!-- Quick Jump Links -->
+<!-- Quick Navigation -->
 <div>
-<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Navigation</h4>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Quick Navigation</h4>
 <ul class="space-y-2 text-[11px]">
-<li class=""><a class="hover:text-brand-orange transition-colors" href="#home">Home Showcase</a></li>
-<li class=""><a class="hover:text-brand-orange transition-colors" href="#features">Key Capabilities</a></li>
-<li class=""><a class="hover:text-brand-orange transition-colors" href="#services">General Contracting Scope</a></li>
-<li class=""><a class="hover:text-brand-orange transition-colors" href="#works">Featured Projects</a></li>
-<li class=""><a class="hover:text-brand-orange transition-colors" href="#specs">Structural Specifications</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#hero">Home Showcase</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#capabilities">Key Capabilities</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#spotlight">Project Spotlight</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#services">General Contracting Scope</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#engineering">Structural Specifications</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#reviews">Client Testimonials</a></li>
 </ul>
 </div>
-<!-- Operating Details -->
+<!-- Business Hours -->
 <div>
 <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Business Hours</h4>
-<p class="text-[11px] text-gray-300">Monday – Friday: 8:00 AM – 5:00 PM</p>
-<p class="text-[11px] text-gray-400">Saturday – Sunday: Closed</p>
+<p class="text-[11px] text-slate-300">Monday – Friday: 8:00 AM – 5:00 PM</p>
+<p class="text-[11px] text-slate-400">Saturday – Sunday: Closed</p>
 <div class="mt-3">
 <span class="text-[10px] text-brand-orange uppercase font-bold tracking-wider">Service Territory</span>
-<p class="text-[11px] text-gray-300">Lubbock County &amp; Panhandle Plains</p>
+<p class="text-[11px] text-slate-300">Lubbock County &amp; Panhandle Plains</p>
 </div>
 </div>
-<!-- Contact & Maps -->
+<!-- Headquarters -->
 <div>
 <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Headquarters</h4>
-<p class="text-[11px] text-gray-300">Lubbock, TX</p>
-<p class="text-[11px] mt-1">Phone: <a class="text-white hover:text-brand-orange" href="tel:+18067754385">+1 (806) 775-4385</a></p>
+<p class="text-[11px] text-slate-300">Lubbock, TX</p>
+<p class="text-[11px] mt-1">Phone: <a class="text-white hover:text-brand-orange transition-colors" href="tel:+18067754385">+1 (806) 775-4385</a></p>
 <div class="mt-3">
 <a class="inline-flex items-center space-x-1.5 text-brand-orange hover:underline text-[11px] font-semibold" href="https://maps.app.goo.gl/VXRWgNS3AFtcR1NY7" rel="noopener noreferrer" target="_blank">
-<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span class="">View Google Business Location</span>
+<span class="material-symbols-outlined text-[14px]">map</span>
+<span>View Google Business Location</span>
 </a>
 </div>
 </div>
 </div>
-<!-- Bottom Bar -->
-<div class="border-t border-[#131822] pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-400 gap-3">
-<p class="">© 2026 B Square Construction LLP. All rights reserved.</p>
-<div class="flex space-x-5 text-gray-400">
-<span class="">Licensed &amp; Bonded Texas Contractor</span>
-<span class="">•</span>
-<span class="">Equal Opportunity Builder</span>
+<!-- Bottom Copyright -->
+<div class="border-t border-[#172030] pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
+<p>© 2026 B Square Construction LLP. All rights reserved.</p>
+<div class="flex items-center space-x-4">
+<span>Licensed &amp; Bonded Texas Contractor</span>
+<span>•</span>
+<span>Equal Opportunity Builder</span>
 </div>
 </div>
 </div>
 </footer>
-<!-- END: MainFooter -->
-<!-- BEGIN: InteractiveScripts -->
-<!-- Vanilla JavaScript for smooth scrolling with header offset, services tab filtering, and consultation form feedback -->
-<script data-purpose="smooth-scrolling">
-    // Smooth scrolling with sticky header offset compensation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          e.preventDefault();
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  </script>
-<script data-purpose="services-filtering">
-    // Simple filter tabs for services scope
-    function filterServices(category) {
-      const cards = document.querySelectorAll('.service-card');
-      const buttons = document.querySelectorAll('.service-tab-btn');
-
-      // Update button styling states
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-brand-orange', 'text-white');
-        btn.classList.add('bg-[#161B24]', 'text-gray-400');
-      });
-      event.target.classList.remove('bg-[#161B24]', 'text-gray-400');
-      event.target.classList.add('bg-brand-orange', 'text-white');
-
-      // Filter cards
-      cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
-<script data-purpose="form-submission-handler">
-    // Handle inquiry consultation form submissions
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const toast = document.getElementById('formSuccessToast');
-      if (toast) {
-        toast.classList.remove('hidden');
+<!-- VANILLA JAVASCRIPT: Smooth scroll, filtering, and consultation handling -->
+<script>
+  // Smooth scroll offset handling for sticky header
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        const headerOffset = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
+    });
+  });
+
+  // Services Interactive Category Filter
+  function filterServices(category, btnElement) {
+    const cards = document.querySelectorAll('.service-card');
+    const buttons = document.querySelectorAll('.service-tab');
+
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-brand-orange', 'text-white', 'shadow-md', 'shadow-orange-600/30');
+      btn.classList.add('bg-[#141b2a]', 'text-slate-400');
+    });
+
+    if (btnElement) {
+      btnElement.classList.remove('bg-[#141b2a]', 'text-slate-400');
+      btnElement.classList.add('bg-brand-orange', 'text-white', 'shadow-md', 'shadow-orange-600/30');
     }
 
-    function resetFormState() {
-      const form = document.getElementById('consultationForm');
-      const toast = document.getElementById('formSuccessToast');
-      if (form) form.reset();
-      if (toast) toast.classList.add('hidden');
-    }
-  </script>
-<!-- END: InteractiveScripts -->
+    cards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
 
+  // Consultation Form Handler
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const toast = document.getElementById('formSuccessToast');
+    if (toast) toast.classList.remove('hidden');
+  }
 
-
+  function resetFormState() {
+    const form = document.getElementById('consultationForm');
+    const toast = document.getElementById('formSuccessToast');
+    if (form) form.reset();
+    if (toast) toast.classList.add('hidden');
+  }
+</script>
 </body></html>
