@@ -1,198 +1,148 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Penaloza Electrical, LLC | Licensed Electrical Contractor</title>
-<meta content="Professional, licensed residential and commercial electrical contracting by Penaloza Electrical, LLC. Fast, code-compliant, and dependable electrical solutions." name="description"/>
-<!-- Google Fonts: Inter & Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS CDN with forms and container queries plugins -->
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style="width: 1280px; height: 5815px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>B Square Construction LLP | Modern Commercial &amp; Luxury Residential General Contractors Lubbock TX</title>
+<meta content="Premier Lubbock and West Texas general contractor specializing in commercial build-outs, custom timber framing, and luxury estates." name="description">
+<!-- Tailwind CSS v3 with Plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Inter"', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
-              orange: '#f97316',
-              amber: '#ea580c',
-              dark: '#0b0f17',
-              navy: '#0f172a',
-              card: '#141a24',
-              border: '#222f3e',
-              muted: '#94a3b8'
+              orange: '#F25C05',
+              darkorange: '#D94E04',
+              surface: '#0B0D11',
+              card: '#13171F',
+              border: '#1E2532',
+              muted: '#8E9AA8'
             }
           }
         }
       }
     }
   </script>
-<style data-purpose="custom-enhancements">
-    /* Custom typography and utility styling */
-    .text-outline-giant {
-      font-size: clamp(3.5rem, 12vw, 9rem);
-      font-weight: 900;
-      color: rgba(255, 255, 255, 0.035);
-      line-height: 0.85;
-      user-select: none;
-      pointer-events: none;
-      letter-spacing: -0.05em;
+<!-- Custom Core Styles -->
+<style data-purpose="core-theme">
+    body {
+      background-color: #080A0E;
+      color: #E2E8F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
     }
-    .backdrop-blur-glass {
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+    .hero-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(242, 92, 5, 0.15) 0%, rgba(11, 13, 17, 0) 70%);
     }
-    .shadow-orange-glow {
-      box-shadow: 0 10px 30px -5px rgba(249, 115, 22, 0.35);
+    .badge-glow {
+      box-shadow: 0 0 20px -2px rgba(242, 92, 5, 0.35);
+    }
+    .card-border-glow:hover {
+      border-color: rgba(242, 92, 5, 0.6);
+      box-shadow: 0 10px 30px -10px rgba(242, 92, 5, 0.2);
     }
   </style>
 </head>
-<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
-<!-- BEGIN: MainHeader -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#090d16]/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300" id="site-header">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-20">
-<!-- Logo Brand -->
-<a aria-label="Penaloza Electrical Homepage" class="flex items-center gap-3 group focus:outline-none" href="#home">
-<img alt="Penaloza Electrical Logo" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105 duration-200" src="https://lh3.googleusercontent.com/aida/AEtjO1WMgj15Wk5COB007AwkUrLqOugGPdDV6IDGpI19ScJc-i3t8L49ZB_SMZgQDZYmqTiQZ9oeIPz327sufIQgDdLQSP6a1z_kmArEBn1w9D44GpVoFlpQhx8wPNfMYJJDpRUbYgYsE36Ob36ji1Oc6LIs4beg7q1qCYMiwP4aQVCI_HOxWkrljRyabCXzdmbKDbbTwxGp292bIlg1rOJgQHc2rnBXAHR-Z1acCIQEVqd04w"/>
+<body class="selection:bg-brand-orange selection:text-white antialiased">
+<!-- BEGIN: StickyTopNav -->
+<!-- Header bar with logo, smooth-scroll links and instant phone CTA -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#080A0E]/85 backdrop-blur-md border-b border-[#1A202C]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo / Emblem -->
+<a class="flex items-center space-x-3 group" data-purpose="brand-logo" href="#home">
+<div class="w-10 h-10 rounded-lg bg-[#2E4036] flex items-center justify-center shadow-md relative overflow-hidden border border-white/10">
+<span class="text-white font-black text-xl tracking-tighter">B</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-sm bg-[#F25C05]"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-extrabold text-white text-base tracking-wider uppercase group-hover:text-brand-orange transition-colors">B SQUARE</span>
+<span class="text-[9px] font-semibold tracking-widest text-[#8E9AA8] -mt-1">CONSTRUCTION LLP</span>
+</div>
 </a>
-<!-- Desktop Navigation Bar -->
-<nav class="hidden lg:flex items-center space-x-7 text-[14px] font-medium tracking-wide text-slate-300">
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('home')">Home</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('about')">About Us</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('solutions')">Solutions</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('services')">Services</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('pricing')">Rates</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('team')">Team</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('faq')">FAQ</button>
-<button class="hover:text-orange-500 transition-colors focus:outline-none" onclick="scrollToId('contact')">Contact</button>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden md:flex items-center space-x-7" data-purpose="desktop-nav">
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#home">Home</a>
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#features">Features</a>
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#services">Services</a>
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#works">Works</a>
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#specs">Engineering</a>
+<a class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#contact">Contact</a>
 </nav>
-<!-- Right Side Call & Emergency Button -->
-<div class="hidden sm:flex items-center gap-4">
-<a class="flex items-center gap-2 text-slate-200 hover:text-orange-400 font-semibold text-sm transition-colors px-3 py-1.5 rounded-lg border border-slate-700/60 bg-slate-800/40 hover:bg-slate-800" href="tel:+17049065639">
-<svg class="w-4 h-4 text-orange-500" fill="currentColor" viewbox="0 0 20 20">
+<!-- Contact Phone & Action Button -->
+<div class="flex items-center space-x-5">
+<a class="hidden lg:flex items-center space-x-2 text-xs font-semibold text-gray-300 hover:text-brand-orange transition-colors" href="tel:+18067754385">
+<svg class="w-4 h-4 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
 </svg>
-<span class="tracking-tight">+1 704-906-5639</span>
+<span>(806) 775-4385</span>
 </a>
-<button class="bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-md transition shadow-md hover:shadow-orange-glow active:scale-95" onclick="scrollToId('contact')">
-            Request Quote
-          </button>
-</div>
-<!-- Mobile Menu Toggle Button -->
-<div class="lg:hidden flex items-center">
-<button aria-label="Toggle navigation menu" class="text-slate-300 hover:text-white p-2 rounded-md focus:outline-none" id="mobile-menu-btn" type="button">
-<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<a class="bg-brand-orange hover:bg-brand-darkorange text-white text-xs md:text-sm font-bold py-2.5 px-5 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg shadow-orange-900/30 flex items-center space-x-1" href="#contact">
+<span>Get Estimate</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 </svg>
-</button>
-</div>
-</div>
-</div>
-<!-- Mobile Dropdown Navigation Menu -->
-<div class="hidden lg:hidden bg-slate-950 border-b border-slate-800 px-6 py-5 space-y-4" id="mobile-menu">
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('home'); toggleMobileMenu();">Home</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('about'); toggleMobileMenu();">About Us</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('solutions'); toggleMobileMenu();">Solutions</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('services'); toggleMobileMenu();">Services</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('pricing'); toggleMobileMenu();">Rates</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('team'); toggleMobileMenu();">Team</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('faq'); toggleMobileMenu();">FAQ</button>
-<button class="block w-full text-left text-slate-200 hover:text-orange-500 font-medium py-1" onclick="scrollToId('contact'); toggleMobileMenu();">Contact</button>
-<div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
-<a class="text-orange-400 font-semibold text-sm flex items-center gap-2" href="tel:+17049065639">
-<svg class="w-4 h-4 text-orange-500" fill="currentColor" viewbox="0 0 20 20">
-<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
-</svg>
-          Call: +1 704-906-5639
-        </a>
-<button class="bg-orange-600 hover:bg-orange-500 text-white font-bold text-center py-2.5 rounded-md text-sm" onclick="scrollToId('contact'); toggleMobileMenu();">
-          Request Quote
-        </button>
+</a>
 </div>
 </div>
 </header>
-<!-- END: MainHeader -->
+<!-- END: StickyTopNav -->
 <main>
 <!-- BEGIN: HeroSection -->
-<section class="relative pt-24 min-h-[92vh] flex items-center bg-[#090e17] overflow-hidden" data-purpose="hero-banner" id="home">
-<!-- Background Image with Gradient Overlay matching VoltPro high-contrast layout -->
-<div class="absolute inset-0 z-0">
-<img alt="Licensed Master Electrician at Breaker Panel" class="w-full h-full object-cover object-right md:object-center filter brightness-[0.45] contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_"/>
-<div class="absolute inset-0 bg-gradient-to-r from-[#090d16] via-[#090d16]/85 to-transparent"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Left Content Block -->
-<div class="lg:col-span-8 space-y-6">
-<!-- Trust Badge Pill -->
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 backdrop-blur-sm">
-<span class="flex h-2 w-2 relative">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
-</span>
-<span class="text-xs font-semibold uppercase tracking-wider text-slate-200">100% Licensed &amp; Insured Master Electrician</span>
+<!-- Hero with headline, badges, and perspective visual showcase -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 hero-glow overflow-hidden" id="home">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<!-- Category Badge -->
+<div class="inline-flex items-center space-x-2 bg-brand-card border border-brand-orange/40 rounded-full px-4 py-1.5 mb-6 badge-glow">
+<span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+<span class="text-xs font-semibold text-brand-orange tracking-wide uppercase">Premier Texas General Contractor</span>
 </div>
 <!-- Main Headline -->
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white font-display tracking-tight leading-[1.05]">
-              ELECTRICAL PROBLEM?<br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-orange-600">WE FIX IT FAST.</span>
-</h1>
-<p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
-              Penaloza Electrical, LLC delivers rapid, precision electrical contracting for residential homes and commercial enterprises. From panel upgrades and circuit safety diagnostics to complete modern smart lighting installations.
-            </p>
-<!-- Dual Action Buttons -->
-<div class="pt-2 flex flex-wrap items-center gap-4">
-<button class="bg-orange-600 hover:bg-orange-500 text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-md shadow-orange-glow transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0" onclick="scrollToId('contact')">
-                Explore More
-              </button>
-<a class="inline-flex items-center gap-2 border border-slate-600 hover:border-orange-500 bg-slate-900/60 hover:bg-slate-800/80 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-md transition-all" href="tel:+17049065639">
-<svg class="w-5 h-5 text-orange-400" fill="currentColor" viewbox="0 0 20 20">
-<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto mb-6">
+          Crafting Enduring &amp; Modern Construction With Precision.
+        </h1>
+<!-- Scannable Subheading -->
+<p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+          Commercial build-outs, custom timber framing, and turnkey residential estates engineered with uncompromising West Texas structural integrity.
+        </p>
+<!-- Call to Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+<a class="w-full sm:w-auto bg-brand-orange hover:bg-brand-darkorange text-white text-sm font-bold py-3.5 px-8 rounded-full transition-all duration-200 shadow-xl shadow-brand-orange/20" href="#contact">
+            Request Consultation
+          </a>
+<a class="w-full sm:w-auto bg-[#161B24] hover:bg-[#1E2532] text-gray-200 hover:text-white border border-[#273142] text-sm font-semibold py-3.5 px-7 rounded-full transition-all duration-200 flex items-center justify-center space-x-2" href="#works">
+<svg class="w-4 h-4 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path>
 </svg>
-                Call +1 704-906-5639
-              </a>
+<span>Explore Projects</span>
+</a>
 </div>
-<!-- Inset Badge Checklist -->
-<div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800/80 max-w-xl">
-<div class="flex items-center gap-2 text-xs font-medium text-slate-300">
-<svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Code-Compliant Guaranteed</span>
-</div>
-<div class="flex items-center gap-2 text-xs font-medium text-slate-300">
-<svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Upfront Honest Pricing</span>
-</div>
-<div class="flex items-center gap-2 text-xs font-medium text-slate-300">
-<svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Master Electrician Lead</span>
+<!-- Perspective Visual Gallery Showcase -->
+<div class="relative max-w-6xl mx-auto mt-6" data-purpose="hero-perspective-showcase">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<!-- Left Feature Card: Commercial Construction Site -->
+<div class="md:col-span-7 rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl relative group">
+<img alt="Master general contractors inspecting structural timber and steel framework at sunset" class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzrwWnDaDGwSLLi20-t5Q9PrVsv77PpsdJmkMkw3mhuhwRnccRo9QuWDMFxYy-VZo5_b9SAgeIQsZzK5ev1B05jDrZbN2ebMoQRQfbcRatvo40woud3DCBP6m1q_MbRwPNTTA4q8cTZDrH6_0AugcuqPrY9T-Z-OCbi0HuJawC7jy7BNgiDyMmiRKX3hmIzlMQTW9RBFSukwMOaEfKdRYgr6BjuoscLRpm6SfPD9obkfm_UGVS42n7gA">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end text-left">
+<span class="text-xs uppercase font-bold tracking-wider text-brand-orange">Structural Framework</span>
+<h3 class="text-lg font-bold text-white">Commercial Steel &amp; Timber Engineering</h3>
+<p class="text-xs text-gray-300">Ground-up commercial facilities built with rigorous site supervision.</p>
 </div>
 </div>
-</div>
-<!-- Right Floating Card Matching VoltPro Thumbnail Inset -->
-<div class="lg:col-span-4 hidden lg:block">
-<div class="bg-slate-900/90 border border-slate-700/80 rounded-xl p-4 backdrop-blur-md shadow-2xl space-y-3 transform hover:scale-[1.02] transition-transform">
-<div class="relative overflow-hidden rounded-lg aspect-video">
-<img alt="Modern Architectural Lighting Installation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F"/>
-<div class="absolute bottom-2 left-2 bg-black/70 backdrop-blur-md text-white text-[11px] font-semibold px-2.5 py-1 rounded">
-                  Active Precision Project
-                </div>
-</div>
-<div class="flex items-center justify-between text-xs font-bold text-slate-200 pt-1">
-<span>Modern &amp; Impactful Solutions</span>
-<span class="text-orange-400 flex items-center gap-1">
-                  View Specs
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</span>
+<!-- Right Feature Card: Modern Architectural Estate -->
+<div class="md:col-span-5 rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl relative group">
+<img alt="Modern luxury architectural home exterior built with timber and glass in Texas" class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDni69FW2TkK610vH2kZrDi6nuN1hcgzPP5VMW_-2F9dZMI8g3lwmn7nNcGNeqCAnRpn2GKCCO0VVifMhUyoW5SV5WyaSDE2070GIWzZ0ESQFzvKRhwZvRRi9xgb-bnXq7LkusbmN8i8AT4xuv55NqzqNbsZWLcWpKFFDQg0ciPSlLhmaztpT4rQ8YfiQbFfmI_H32rv3Pk3fW2qjM1XR14q-7TNkvrVIpXwI-TgFKhRiZBuuaRKDkerA">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end text-left">
+<span class="text-xs uppercase font-bold tracking-wider text-brand-orange">Luxury Residential</span>
+<h3 class="text-lg font-bold text-white">Turnkey Custom Living Estates</h3>
+<p class="text-xs text-gray-300">Engineered thermal envelopes with panoramic glazing.</p>
 </div>
 </div>
 </div>
@@ -200,811 +150,566 @@
 </div>
 </section>
 <!-- END: HeroSection -->
-<!-- BEGIN: TrustAndCompanySection -->
-<section class="py-20 bg-white border-b border-slate-200" data-purpose="company-credentials" id="about">
+<!-- BEGIN: CoreMetricsSection -->
+<!-- High-impact numbers and reliability indicators matching Buildix style -->
+<section class="py-20 bg-[#0B0D11] border-y border-[#181E29]" id="features">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
+<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Core Capabilities</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Discover Our Proven Execution</h2>
+<p class="text-sm text-brand-muted mt-2">Delivering dependable industrial strength and architectural refinement.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Metric Card 1 -->
+<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
+<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
+<span>25</span><span class="text-brand-orange">+</span>
+</div>
+<h3 class="text-base font-bold text-white mb-2">Years of Field Mastery</h3>
+<p class="text-sm text-gray-400">Master superintendents managing safety, code compliance, and subcontractor flow on every commercial &amp; residential build.</p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
+<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
+<span>380</span><span class="text-brand-orange">+</span>
+</div>
+<h3 class="text-base font-bold text-white mb-2">Structures Delivered</h3>
+<p class="text-sm text-gray-400">Ground-up commercial hubs, heavy timber pavilions, and luxury custom homes built across Lubbock and West Texas.</p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-brand-card/70 border border-brand-border rounded-2xl p-8 text-center transition-all duration-300 card-border-glow">
+<div class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
+<span>100</span><span class="text-brand-orange">%</span>
+</div>
+<h3 class="text-base font-bold text-white mb-2">On-Budget Guarantee</h3>
+<p class="text-sm text-gray-400">Exhaustive itemized bids with zero surprise change orders and transparent contractor-to-client financial reporting.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CoreMetricsSection -->
+<!-- BEGIN: ShowcaseViewerSection -->
+<!-- Interactive portfolio showcase with a video/project preview feel -->
+<section class="py-24 bg-[#080A0E] relative" id="works">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
+<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Project Spotlight</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-extrabold text-white">Lubbock Commercial Hub &amp; Timber Pavilion</h2>
+<p class="text-sm text-brand-muted mt-2">A landmark multi-phase hybrid steel and heavy timber build by B Square Construction LLP.</p>
+</div>
+<div class="relative rounded-2xl overflow-hidden border border-brand-border bg-[#101319] shadow-2xl max-w-5xl mx-auto">
+<!-- Image Element -->
+<div class="relative w-full aspect-video">
+<img alt="Custom modern timber beams and steel framework under construction in Texas at golden hour" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDPBgVDEMySLulaPe5qDgBIxA45gki3OYKyfEDk7oKIQof5BP1ax5K16Qx5TnBAMsv6VU7Sy1VX5Z9W4UK_LZ8I-Z7bZEhIsmW7ll6WBEEttrcw-M3ctQ5oNAMiZ3BIKqI0EmV35-_qpVOe-6-da3Y9CtX_vi5tuVUdSUD7uqCcRz9f3U3_pI3H7G5XPpA5RyTGeUQzyAAEyv3o7T7296SBnjThbKu6evXPm9uIsk0mGeM_fvROaslA">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center group cursor-pointer" onclick="alert('Viewing 3D Structural Walkthrough for Lubbock Commercial Hub.')">
+<div class="w-20 h-20 rounded-full bg-brand-orange flex items-center justify-center shadow-xl shadow-brand-orange/40 transform group-hover:scale-110 transition-transform duration-300">
+<svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Bottom Meta Bar -->
+<div class="p-6 bg-[#13171F] flex flex-col md:flex-row md:items-center justify-between border-t border-brand-border gap-4">
+<div>
+<span class="text-xs font-semibold text-brand-orange uppercase">Active Build Showcase</span>
+<p class="text-white font-bold text-base">Heavy Timber &amp; Structural Steel Hybrid Assembly</p>
+</div>
+<div class="flex items-center space-x-3 text-xs text-gray-300">
+<span class="px-3 py-1 bg-black/40 rounded-full border border-gray-700">Lubbock, TX</span>
+<span class="px-3 py-1 bg-black/40 rounded-full border border-gray-700">Turnkey Phase II</span>
+<a class="text-brand-orange hover:underline font-bold" href="#contact">Request Specs →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ShowcaseViewerSection -->
+<!-- BEGIN: ServicesCollectionSection -->
+<!-- Ready-to-build service matrix matching the Buildix template cards -->
+<section class="py-24 bg-[#0B0D11] border-t border-[#181E29]" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1 mb-3">
+<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Our Scope</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-extrabold text-white">End-to-End General Contracting Services</h2>
+<p class="text-sm text-brand-muted mt-2">Comprehensive construction management from foundation to handover.</p>
+</div>
+<!-- Filter / Category Tabs -->
+<div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+<button class="service-tab-btn px-4 py-1.5 text-xs font-bold rounded-full bg-brand-orange text-white" onclick="filterServices('all')">All Services</button>
+<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('commercial')">Commercial</button>
+<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('residential')">Residential</button>
+<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('framing')">Timber &amp; Framing</button>
+<button class="service-tab-btn px-4 py-1.5 text-xs font-medium rounded-full bg-[#161B24] text-gray-400 hover:text-white border border-[#232B3B]" onclick="filterServices('renovation')">Renovations</button>
+</div>
+<!-- Grid of Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+<!-- Service Card 1 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Commercial Build-Outs</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Retail facades, professional office parks, medical suites, and industrial shell fit-outs executed to municipal specifications.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Turnkey Execution</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="framing">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Custom Timber &amp; Heavy Framing</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Exposed architectural glue-lam timber, engineered truss systems, steel-tie framing, and high-load load-bearing woodwork.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Master Carpenters</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="residential">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Luxury Residential Construction</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Architect-designed private estates engineered with masonry, glass walls, and structural resilience for the West Texas climate.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Custom Architecture</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Structural Envelopes &amp; Roofing</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Standing-seam architectural metal roofs, industrial flat TPO systems, impact warranties, and moisture barrier systems.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Weather-Shielded</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="commercial">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Site Feasibility &amp; Permitting</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Lubbock zoning approvals, soil geotechnical analysis, utility tap access planning, and construction blueprint audits.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Code Certified</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+<!-- Service Card 6 -->
+<div class="service-card bg-[#12161F] border border-brand-border rounded-xl p-6 transition-all duration-300 card-border-glow flex flex-col justify-between" data-category="renovation">
+<div>
+<div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center mb-4 text-brand-orange">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Tenant Overhauls &amp; Renovations</h3>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Complete structural re-configurations, modern facades, MEP modernisation, and high-efficiency building retrofits.</p>
+</div>
+<div class="pt-4 border-t border-[#1C222E] flex justify-between items-center text-xs">
+<span class="text-emerald-400 font-semibold">● Fast Turnaround</span>
+<a class="text-brand-orange font-bold hover:underline" href="#contact">Consult →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesCollectionSection -->
+<!-- BEGIN: SpecificationsRigourSection -->
+<!-- Blueprint, engineering standards, and contractor collaboration -->
+<section class="py-24 bg-[#080A0E] relative overflow-hidden" id="specs">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Image Side -->
-<div class="lg:col-span-6 relative">
-<div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-<img alt="Electrician Testing Recessed Lights with Multimeter" class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F"/>
-<!-- Floating Pill: 100% Safety Compliance -->
-<div class="absolute top-5 left-5 bg-white/95 backdrop-blur-md shadow-md rounded-lg px-4 py-2.5 flex items-center gap-3 border border-slate-100">
-<div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-</div>
-<div>
-<p class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Standards</p>
-<p class="text-xs font-extrabold text-slate-900">100% Safety Compliance</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Content Side -->
+<!-- Left Column: Checklists and guarantees -->
 <div class="lg:col-span-6 space-y-6">
-<div class="space-y-2">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-600">Our Company Credo</span>
-<h2 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900 tracking-tight">
-                BUILT ON TRUST &amp; TECHNICAL EXCELLENCE
-              </h2>
+<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1">
+<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Engineering Rigor</span>
 </div>
-<p class="text-slate-600 leading-relaxed text-base">
-              At <strong class="text-slate-900 font-semibold">Penaloza Electrical, LLC</strong>, we are certified electrical contractors dedicated to delivering safe, reliable, and high-quality electrical work. Every project is handled with strict adherence to the National Electrical Code (NEC), precision digital diagnostics, and long-lasting craftsmanship.
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+              Built to Outlast Texas Climate Extremes.
+            </h2>
+<p class="text-sm text-gray-400 leading-relaxed">
+              Every foundation, framing header, and roofing tie-down is engineered specifically to withstand 70+ mph High Plains winds, thermal expansion cycles, and caliche soil dynamics.
             </p>
-<!-- Numbers Counter Showcase -->
-<div class="grid grid-cols-2 gap-6 pt-2">
-<div class="border-l-4 border-orange-500 pl-4">
-<span class="text-4xl font-black font-display text-slate-900 tracking-tight">10+</span>
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Years Field Experience</p>
-</div>
-<div class="border-l-4 border-slate-900 pl-4">
-<span class="text-4xl font-black font-display text-slate-900 tracking-tight">500+</span>
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Satisfied Residential &amp; Commercial Clients</p>
-</div>
-</div>
-<div class="pt-4 flex items-center gap-4">
-<button class="bg-orange-600 hover:bg-orange-700 text-white font-semibold text-sm px-6 py-3 rounded-md transition shadow-md" onclick="scrollToId('contact')">
-                Schedule An Assessment
-              </button>
-<a class="text-sm font-bold text-slate-800 hover:text-orange-600 transition flex items-center gap-1.5" href="#services" onclick="scrollToId('services')">
-                Review Our Capabilities →
-              </a>
-</div>
-</div>
-</div>
-<!-- Trusted Manufacturers / Brand Logos Strip -->
-<div class="mt-16 pt-10 border-t border-slate-200">
-<p class="text-center text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Trusted Hardware &amp; Industrial Equipment We Install</p>
-<div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all">
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">SQUARE D</span>
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">SIEMENS</span>
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">LEVITON</span>
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">LUTRON</span>
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">EATON</span>
-<span class="font-extrabold text-lg text-slate-700 tracking-wider">SCHNEIDER</span>
-</div>
-</div>
-</div>
-</section>
-<!-- END: TrustAndCompanySection -->
-<!-- BEGIN: SolutionsSection -->
-<section class="relative py-24 bg-[#080d16] text-white overflow-hidden" data-purpose="interactive-solutions" id="solutions">
-<!-- Giant Background Watermark Text Matching VoltPro (OUR SOLUTIONS) -->
-<div class="absolute top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none text-center w-full z-0">
-<span class="text-outline-giant uppercase">OUR SOLUTIONS</span>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
-<p class="text-xs font-bold uppercase tracking-widest text-orange-500">What We Offer</p>
-<h2 class="text-3xl sm:text-5xl font-black font-display tracking-tight text-white">
-            COMPREHENSIVE ELECTRICAL CAPABILITIES
-          </h2>
-<p class="text-slate-400 text-sm sm:text-base">
-            From modern residential renovations to demanding commercial installations, select a service tier below.
-          </p>
-</div>
-<!-- Interactive Tabs Grid Matching VoltPro Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Left Accordion Selector -->
-<div class="lg:col-span-5 space-y-3" id="solutions-accordion">
-<!-- Item 01 -->
-<button class="solution-btn w-full text-left p-5 rounded-xl border border-orange-500/80 bg-slate-900/90 transition-all duration-200 group active-solution" data-index="0" onclick="selectSolution(0)">
-<div class="flex items-center justify-between">
-<span class="text-xs font-mono font-bold text-orange-400 group-hover:text-orange-300">[01]</span>
-<span class="text-xs text-slate-400">Residential • Commercial</span>
-</div>
-<h3 class="text-lg font-bold text-white mt-1 group-hover:text-orange-400 transition-colors">
-                Modern &amp; Impactful Solutions
-              </h3>
-<p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Smart architectural recessed LED lighting, chandelier installation, electric vehicle (EV) level-2 charging stations, and energy-efficient lighting controls.
-              </p>
-</button>
-<!-- Item 02 -->
-<button class="solution-btn w-full text-left p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/70 transition-all duration-200 group" data-index="1" onclick="selectSolution(1)">
-<div class="flex items-center justify-between">
-<span class="text-xs font-mono font-bold text-slate-400 group-hover:text-orange-400">[02]</span>
-<span class="text-xs text-slate-400">Power Distribution</span>
-</div>
-<h3 class="text-lg font-bold text-white mt-1 group-hover:text-orange-400 transition-colors">
-                Breaker Panels &amp; Rewiring
-              </h3>
-<p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Service entrance upgrades (100A to 200A/400A), fuse box replacements, sub-panel installations, and whole-structure copper rewiring.
-              </p>
-</button>
-<!-- Item 03 -->
-<button class="solution-btn w-full text-left p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/70 transition-all duration-200 group" data-index="2" onclick="selectSolution(2)">
-<div class="flex items-center justify-between">
-<span class="text-xs font-mono font-bold text-slate-400 group-hover:text-orange-400">[03]</span>
-<span class="text-xs text-slate-400">Commercial Grade</span>
-</div>
-<h3 class="text-lg font-bold text-white mt-1 group-hover:text-orange-400 transition-colors">
-                Experience-Focused Installations
-              </h3>
-<p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Commercial conduit bending, 3-phase wiring, dedicated equipment circuits, emergency exit lighting, and retail fit-outs.
-              </p>
-</button>
-<!-- Item 04 -->
-<button class="solution-btn w-full text-left p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/70 transition-all duration-200 group" data-index="3" onclick="selectSolution(3)">
-<div class="flex items-center justify-between">
-<span class="text-xs font-mono font-bold text-slate-400 group-hover:text-orange-400">[04]</span>
-<span class="text-xs text-slate-400">Safety &amp; Compliance</span>
-</div>
-<h3 class="text-lg font-bold text-white mt-1 group-hover:text-orange-400 transition-colors">
-                Safety Maintenance &amp; Inspection
-              </h3>
-<p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Whole-home surge protection, GFCI/AFCI breaker verification, thermal electrical diagnostics, and pre-purchase home safety inspections.
-              </p>
-</button>
-</div>
-<!-- Right Showcase Image & Interactive Details -->
-<div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md">
-<div class="relative rounded-xl overflow-hidden aspect-[16/10] mb-6 shadow-2xl">
-<img alt="Electrical Craftsmanship" class="w-full h-full object-cover transition-all duration-500" id="solution-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F"/>
-<div class="absolute top-3 left-3 bg-black/75 px-3 py-1.5 rounded text-xs font-semibold text-orange-400 border border-slate-700">
-<span id="solution-tag">Residential Lighting &amp; Circuits</span>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<h4 class="text-xl font-bold text-white" id="solution-title">Modern &amp; Impactful Solutions</h4>
-<span class="text-xs bg-orange-600/20 text-orange-400 border border-orange-500/30 px-2.5 py-1 rounded">Licensed Standard</span>
-</div>
-<p class="text-slate-300 text-sm leading-relaxed" id="solution-desc">
-                Safety isn't just a standard—it's our core operating mindset. Every single circuit we install is rigorously checked with calibrated digital multimeters and load tested against strict building specifications.
-              </p>
-<div class="pt-2 flex flex-wrap items-center gap-3">
-<span class="text-xs bg-slate-800 px-3 py-1.5 rounded-full text-slate-300 border border-slate-700">Standard Code Certified</span>
-<span class="text-xs bg-slate-800 px-3 py-1.5 rounded-full text-slate-300 border border-slate-700">Licensed Electrician</span>
-<span class="text-xs bg-slate-800 px-3 py-1.5 rounded-full text-slate-300 border border-slate-700">Warranty Backed</span>
-</div>
-<div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-<a class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1.5" href="tel:+17049065639">
-                  Call for Immediate Inquiry: +1 704-906-5639
-                </a>
-<button class="bg-orange-600 hover:bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-md" onclick="scrollToId('contact')">
-                  View All Services
-                </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: SolutionsSection -->
-<!-- BEGIN: WhyChooseUsAndMetrics -->
-<section class="py-20 bg-slate-50 border-b border-slate-200" data-purpose="metrics-grid" id="services">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Left Metric Statistics Panel -->
-<div class="lg:col-span-6 space-y-8">
-<div class="space-y-2">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-600">Customers First</span>
-<h2 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900 tracking-tight">
-                WHY HOMEOWNERS &amp; GENERAL CONTRACTORS CHOOSE PENALOZA
-              </h2>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Choose us for dependable electrical services, transparent communication, expert workmanship, and an unwavering commitment to electrical safety on every job.
-              </p>
-</div>
-<!-- Stats Stack -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-<div class="text-3xl font-black font-display text-orange-600">98%</div>
-<div class="text-xs font-bold text-slate-800 uppercase tracking-wider mt-1">Customer Satisfaction</div>
-<p class="text-xs text-slate-500 mt-2">Verified five-star reviews for clean, dependable wiring solutions.</p>
-</div>
-<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-<div class="text-3xl font-black font-display text-slate-900">7K+</div>
-<div class="text-xs font-bold text-slate-800 uppercase tracking-wider mt-1">Jobs Completed</div>
-<p class="text-xs text-slate-500 mt-2">Successfully completed residential and commercial electrical tasks.</p>
-</div>
-</div>
-<!-- Safety Card -->
-<div class="bg-slate-900 text-white p-6 rounded-xl shadow-lg border border-slate-800 flex items-start gap-4">
-<div class="p-3 bg-orange-600 rounded-lg text-white">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<div class="space-y-4 pt-2">
+<div class="flex items-start space-x-3.5">
+<div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
 <div>
-<h4 class="font-bold text-base text-white">Safety Always Comes First</h4>
-<p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                  Electrical systems are unforgiving. We never cut corners, never use sub-par materials, and always pull relevant municipal permits for major work.
-                </p>
-<a class="inline-block mt-3 text-xs font-bold text-orange-400 hover:text-orange-300" href="#contact" onclick="scrollToId('contact')">Learn about our safety guarantee →</a>
+<h4 class="text-sm font-bold text-white">Class-A Certified General Contracting</h4>
+<p class="text-xs text-gray-400">Fully licensed, bonded, and insured with multi-million dollar liability protection.</p>
 </div>
 </div>
+<div class="flex items-start space-x-3.5">
+<div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
-<!-- Right Visual Stack Matching VoltPro Multi-Card Layout -->
-<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="space-y-4">
-<div class="relative rounded-xl overflow-hidden shadow-md group">
-<img alt="Commercial Electrical Team" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYP-cR5rRH7GRMQfVjW9OYJ1Kw-ZobFH19x7W2wC-WToBbrb5XjAPwqdqYafBCF9nqTyYeF_dGuwTWIAmqzUUbHZ9BR5EQabL7ggUp_nFy65hi4UTMLt2N04ogiIP8E4hpYRrMePjewJB9vz-xmBt9CuBU-Dzjl_dlLODKA7Nj8tdTWbH9exeZ33sBSGQBXtzzBnFwM20Isa4H4vBQojxlFA0SCKqe5iA-gNyTuoQq"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
-<span class="text-xs font-bold uppercase tracking-wider text-orange-400">Commercial Work</span>
-<span class="font-bold text-sm">Industrial &amp; Retail Fit-Outs</span>
-</div>
-</div>
-<div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
-<span class="text-xs font-bold uppercase text-slate-400">Hours of Operation</span>
-<p class="text-sm font-extrabold text-slate-900 mt-1">Mon – Fri: 8:00 AM – 5:00 PM</p>
-<p class="text-xs text-slate-500 mt-0.5">Saturday &amp; Sunday: Closed</p>
-</div>
-</div>
-<div class="space-y-4 sm:pt-6">
-<div class="bg-orange-600 text-white p-6 rounded-xl shadow-lg flex flex-col justify-between">
 <div>
-<span class="text-[11px] font-bold uppercase tracking-widest text-orange-200">Direct Contractor Line</span>
-<div class="text-xl font-black mt-1 font-display tracking-tight">+1 704-906-5639</div>
-<p class="text-xs text-orange-100 mt-2">Available for scheduled diagnostics, estimates, and safety upgrades.</p>
-</div>
-<a class="mt-4 inline-block bg-white text-orange-700 text-center font-bold text-xs uppercase px-4 py-2.5 rounded hover:bg-orange-50 transition" href="tel:+17049065639">
-                  Dial Directly
-                </a>
-</div>
-<div class="relative rounded-xl overflow-hidden shadow-md group">
-<img alt="Electrician at Switchboard" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
-<span class="text-xs font-bold uppercase tracking-wider text-orange-400">Precision Work</span>
-<span class="font-bold text-sm">Panel Upgrades &amp; Breakers</span>
+<h4 class="text-sm font-bold text-white">Hurricane-Grade Anchor Bolts &amp; Steel Plates</h4>
+<p class="text-xs text-gray-400">Redundant framing anchors preventing structural shifting under gust forces.</p>
 </div>
 </div>
+<div class="flex items-start space-x-3.5">
+<div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: WhyChooseUsAndMetrics -->
-<!-- BEGIN: ActionCalloutBanner -->
-<section class="relative py-20 bg-slate-900 overflow-hidden text-white" data-purpose="middle-cta-banner">
-<div class="absolute inset-0 z-0 opacity-20">
-<img alt="Background Site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYP-cR5rRH7GRMQfVjW9OYJ1Kw-ZobFH19x7W2wC-WToBbrb5XjAPwqdqYafBCF9nqTyYeF_dGuwTWIAmqzUUbHZ9BR5EQabL7ggUp_nFy65hi4UTMLt2N04ogiIP8E4hpYRrMePjewJB9vz-xmBt9CuBU-Dzjl_dlLODKA7Nj8tdTWbH9exeZ33sBSGQBXtzzBnFwM20Isa4H4vBQojxlFA0SCKqe5iA-gNyTuoQq"/>
-</div>
-<div class="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-6">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-400">Professional &amp; Clean Workmanship</span>
-<h2 class="text-3xl sm:text-5xl font-black font-display tracking-tight text-white leading-tight">
-          NEED A SKILLED ELECTRICIAN TODAY?
-        </h2>
-<p class="text-slate-300 max-w-2xl mx-auto text-base">
-          From minor residential switchboard faults to full industrial electrical wiring, Penaloza Electrical, LLC brings code-compliant, guaranteed peace of mind.
-        </p>
-<div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-<a class="bg-orange-600 hover:bg-orange-500 text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-md shadow-orange-glow transition active:scale-95" href="tel:+17049065639">
-            Call +1 704-906-5639
-          </a>
-<button class="border border-slate-600 hover:border-slate-400 bg-slate-800/80 text-white font-semibold text-sm sm:text-base px-8 py-3.5 rounded-md transition" onclick="scrollToId('contact')">
-            Book Online Consultation
-          </button>
-</div>
-</div>
-</section>
-<!-- END: ActionCalloutBanner -->
-<!-- BEGIN: PricingAndPlans -->
-<section class="py-24 bg-white border-b border-slate-200" data-purpose="transparent-pricing" id="pricing">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="max-w-2xl mx-auto text-center space-y-2 mb-16">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-600">Our Pricing</span>
-<h2 class="text-3xl sm:text-4xl font-black font-display text-slate-900 tracking-tight">
-            TRANSPARENT SERVICE PLANS &amp; RATES
-          </h2>
-<p class="text-slate-600 text-sm">
-            Flexible diagnostic and service options tailored to meet residential and commercial electrical requirements.
-          </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-<!-- Standard Diagnostic Plan -->
-<div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 relative flex flex-col justify-between hover:shadow-lg transition">
 <div>
-<div class="flex items-center justify-between">
-<h3 class="text-xl font-bold text-slate-900">Standard Service Call</h3>
-<span class="text-xs bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded">Diagnostic</span>
-</div>
-<p class="text-xs text-slate-500 mt-1">Best for common home fixes and minor repairs</p>
-<div class="mt-6 flex items-baseline">
-<span class="text-4xl font-black text-slate-900 font-display">$149</span>
-<span class="text-xs text-slate-500 font-medium ml-1">/ Standard Visit</span>
-</div>
-<!-- Checklist -->
-<ul class="mt-6 space-y-3 text-xs text-slate-600">
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Light, receptacle &amp; fan diagnostics</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Switchboard and circuit breaker triage</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Multi-meter voltage and ground testing</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Clean and code-verified written report</span>
-</li>
-</ul>
-</div>
-<div class="mt-8 pt-6 border-t border-slate-200">
-<button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase py-3 rounded-lg transition tracking-wider" onclick="scrollToId('contact')">
-                Book Standard Call
-              </button>
+<h4 class="text-sm font-bold text-white">10-Year Transferable Structural Warranty</h4>
+<p class="text-xs text-gray-400">Guaranteed peace of mind backed by documented third-party engineering audits.</p>
 </div>
 </div>
-<!-- Premium Audit & Complete Upgrade Plan -->
-<div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white border-2 border-orange-500 rounded-2xl p-8 relative flex flex-col justify-between shadow-xl">
-<div class="absolute -top-3 right-6 bg-orange-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-              Most Popular
-            </div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center space-x-2 text-sm font-bold text-brand-orange hover:text-white transition-colors" href="#contact">
+<span>Request Blueprint Review Session</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<!-- Right Column: Superintendent Photo on Job Site -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl">
+<img alt="Contractor and superintendent reviewing blueprints on site in Lubbock Texas" class="w-full h-[440px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhkIJdLYisxkHu5rwDUEuPHpIpSMAcGbaDsjsuNvC8cK64qfmcDLSN7TwcyFYFVKZn58yTLBwPYpYSRITU7h5sldQJ2fqg27evyyueFiNBYiMxkpkTyHJQ25pLXC6VjZ_mKF2ZI2If3heJJdycThZPYgyMkMSEQmUOVjaRnT5xvldhPgZvAlUH3ZzVkWN15oGIuLbOlo2B3_vvAdStdi2sjNBtex1FILNB3wfEyiV8_1Gdqi-mOmyxQ">
+<div class="absolute bottom-4 left-4 right-4 bg-black/85 backdrop-blur-md border border-white/10 rounded-xl p-4 flex items-center justify-between">
 <div>
-<div class="flex items-center justify-between">
-<h3 class="text-xl font-bold text-white">Full Safety Audit &amp; Major Work</h3>
-<span class="text-xs bg-orange-950/60 text-orange-400 font-semibold px-2.5 py-1 rounded border border-orange-500/30">Comprehensive</span>
+<span class="text-[10px] uppercase font-bold text-brand-orange tracking-widest">Site Management</span>
+<p class="text-xs font-semibold text-white">Active On-Site Blueprint Coordination</p>
+<p class="text-[11px] text-gray-400">Lubbock, Texas Territory</p>
 </div>
-<p class="text-xs text-slate-400 mt-1">Best for remodels, panel upgrades &amp; commercial checks</p>
-<div class="mt-6 flex items-baseline">
-<span class="text-4xl font-black text-white font-display">$199</span>
-<span class="text-xs text-slate-400 font-medium ml-1">/ Comprehensive Inspection</span>
-</div>
-<!-- Checklist -->
-<ul class="mt-6 space-y-3 text-xs text-slate-300">
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Full-structure electrical audit &amp; load calculation</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Panel upgrade, rewire and EV charger estimate</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Whole-home surge protection review</span>
-</li>
-<li class="flex items-center gap-2">
-<svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Priority dispatch &amp; quote deduction on execution</span>
-</li>
-</ul>
-</div>
-<div class="mt-8 pt-6 border-t border-slate-800">
-<button class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs uppercase py-3 rounded-lg shadow-orange-glow transition tracking-wider" onclick="scrollToId('contact')">
-                Book Full Audit
-              </button>
+<div class="bg-brand-orange text-white text-xs font-bold px-3 py-1.5 rounded-lg">
+                  100% Code Passed
+                </div>
 </div>
 </div>
 </div>
-<p class="text-center text-xs text-slate-500 mt-8">
-          Need custom commercial project estimations? <a class="text-orange-600 font-bold hover:underline" href="tel:+17049065639">Speak directly with master electrician Penaloza</a>.
-        </p>
+</div>
 </div>
 </section>
-<!-- END: PricingAndPlans -->
-<!-- BEGIN: TeamSpecialistsSection -->
-<section class="py-24 bg-slate-900 text-white" data-purpose="team-showcase" id="team">
+<!-- END: SpecificationsRigourSection -->
+<!-- BEGIN: TestimonialsSection -->
+<!-- Client reviews and local trust metrics -->
+<section class="py-20 bg-[#0B0D11] border-t border-[#181E29]">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-500">Our Professionals</span>
-<h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white">
-            SKILLED FIELD SPECIALISTS
-          </h2>
-<p class="text-slate-400 text-sm">
-            Trained in contemporary electrical building codes, diagnostic accuracy, and clean customer service.
-          </p>
+<div class="text-center max-w-xl mx-auto mb-14">
+<div class="inline-flex items-center space-x-1.5 text-amber-400 mb-2">
+<span>★★★★★</span>
+<span class="text-xs font-bold text-white ml-2">4.9 / 5.0 Google Verified</span>
 </div>
-<!-- Team Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl overflow-hidden text-center p-5 group hover:border-orange-500 transition">
-<div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-orange-500">
-<img alt="Lead Master Electrician" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_"/>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-white">Trusted by Texas Property Leaders</h2>
 </div>
-<h4 class="font-bold text-white text-base">E. Penaloza</h4>
-<p class="text-xs font-semibold text-orange-400">Master Electrician &amp; Founder</p>
-<p class="text-xs text-slate-400 mt-2">10+ years field leadership in high-voltage industrial &amp; custom residential systems.</p>
-</div>
-<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl overflow-hidden text-center p-5 group hover:border-orange-500 transition">
-<div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-slate-600 group-hover:border-orange-500 transition">
-<img alt="Senior Service Technician" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F"/>
-</div>
-<h4 class="font-bold text-white text-base">Daniel B.</h4>
-<p class="text-xs font-semibold text-orange-400">Senior Service Technician</p>
-<p class="text-xs text-slate-400 mt-2">Specialist in smart architectural lighting controls and recessed fixtures.</p>
-</div>
-<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl overflow-hidden text-center p-5 group hover:border-orange-500 transition">
-<div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-slate-600 group-hover:border-orange-500 transition">
-<img alt="Commercial Project Lead" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYP-cR5rRH7GRMQfVjW9OYJ1Kw-ZobFH19x7W2wC-WToBbrb5XjAPwqdqYafBCF9nqTyYeF_dGuwTWIAmqzUUbHZ9BR5EQabL7ggUp_nFy65hi4UTMLt2N04ogiIP8E4hpYRrMePjewJB9vz-xmBt9CuBU-Dzjl_dlLODKA7Nj8tdTWbH9exeZ33sBSGQBXtzzBnFwM20Isa4H4vBQojxlFA0SCKqe5iA-gNyTuoQq"/>
-</div>
-<h4 class="font-bold text-white text-base">Megan P.</h4>
-<p class="text-xs font-semibold text-orange-400">Commercial Project Lead</p>
-<p class="text-xs text-slate-400 mt-2">Oversees blueprint compliance, 3-phase wiring, and commercial code sign-offs.</p>
-</div>
-<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl overflow-hidden text-center p-5 group hover:border-orange-500 transition">
-<div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-slate-600 group-hover:border-orange-500 transition">
-<img alt="Industrial Technician" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_"/>
-</div>
-<h4 class="font-bold text-white text-base">James T.</h4>
-<p class="text-xs font-semibold text-orange-400">Panel &amp; Breaker Specialist</p>
-<p class="text-xs text-slate-400 mt-2">Expert in heavy electrical service upgrades and surge suppression units.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
+<p class="text-xs text-gray-300 leading-relaxed mb-4">
+              "B Square Construction managed our retail strip expansion in Lubbock. Their superintendent was on-site every single morning, and we finished two weeks ahead of schedule with zero price inflations."
+            </p>
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+                MC
+              </div>
+<div>
+<h4 class="text-xs font-bold text-white">Marcus Campbell</h4>
+<p class="text-[11px] text-gray-400">Commercial Real Estate Owner, West Texas</p>
 </div>
 </div>
 </div>
-</section>
-<!-- END: TeamSpecialistsSection -->
-<!-- BEGIN: FAQSection -->
-<section class="py-24 bg-white border-b border-slate-200" data-purpose="faq-accordion" id="faq">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center space-y-2 mb-12">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-600">Quick Answers</span>
-<h2 class="text-3xl sm:text-4xl font-black font-display text-slate-900 tracking-tight">
-            FREQUENTLY ASKED QUESTIONS
-          </h2>
-<p class="text-slate-500 text-sm">
-            Clear facts on licensing, pricing, and how we handle your electrical projects.
-          </p>
+<!-- Testimonial 2 -->
+<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
+<p class="text-xs text-gray-300 leading-relaxed mb-4">
+              "The timber and steel combination on our custom estate is breathtaking. B Square's craftsmanship and structural knowledge give us total confidence even during Lubbock's severe spring windstorms."
+            </p>
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+                DH
+              </div>
+<div>
+<h4 class="text-xs font-bold text-white">David &amp; Sarah Hayes</h4>
+<p class="text-[11px] text-gray-400">Residential Homeowners, Lubbock, TX</p>
 </div>
-<div class="space-y-4" id="faq-container">
-<!-- Question 1 -->
-<div class="border border-slate-200 rounded-xl p-5 transition bg-slate-50/50">
-<button class="w-full flex items-center justify-between text-left font-bold text-slate-900 text-base focus:outline-none" onclick="toggleFaq(this)">
-<span>How do you determine pricing for electrical services?</span>
-<span class="faq-icon text-orange-600 font-extrabold text-xl ml-2">+</span>
-</button>
-<div class="faq-answer hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/80 pt-3">
-              We provide upfront, transparent pricing. Minor diagnostics start with a flat dispatch fee of $149, while major projects like panel replacements or whole-building installations are provided with detailed, itemized quotes before any physical work begins. No surprise fees.
-            </div>
 </div>
-<!-- Question 2 -->
-<div class="border border-slate-200 rounded-xl p-5 transition bg-slate-50/50">
-<button class="w-full flex items-center justify-between text-left font-bold text-slate-900 text-base focus:outline-none" onclick="toggleFaq(this)">
-<span>Is Penaloza Electrical, LLC licensed and insured?</span>
-<span class="faq-icon text-orange-600 font-extrabold text-xl ml-2">+</span>
-</button>
-<div class="faq-answer hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/80 pt-3">
-              Yes, 100%. We operate as fully licensed electrical contractors with comprehensive general liability and workers' compensation coverage. We pull all necessary local municipal permits and schedule building inspections when required.
-            </div>
 </div>
-<!-- Question 3 -->
-<div class="border border-slate-200 rounded-xl p-5 transition bg-slate-50/50">
-<button class="w-full flex items-center justify-between text-left font-bold text-slate-900 text-base focus:outline-none" onclick="toggleFaq(this)">
-<span>What are your regular business operating hours?</span>
-<span class="faq-icon text-orange-600 font-extrabold text-xl ml-2">+</span>
-</button>
-<div class="faq-answer hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/80 pt-3">
-              Our standard operating hours are Monday through Friday from 8:00 AM to 5:00 PM. We are closed Saturday and Sunday to ensure our master craftsmen are fully rested for scheduled field work.
-            </div>
+<!-- Testimonial 3 -->
+<div class="bg-[#13171F] border border-brand-border p-6 rounded-xl">
+<p class="text-xs text-gray-300 leading-relaxed mb-4">
+              "Their team respects timelines and provides itemized line-item invoicing that makes municipal reporting smooth. We consider B Square our first-call general contractor for all capital projects."
+            </p>
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs">
+                RL
+              </div>
+<div>
+<h4 class="text-xs font-bold text-white">Rachel Lawson</h4>
+<p class="text-[11px] text-gray-400">Facilities Director, Lubbock Tech Hub</p>
 </div>
-<!-- Question 4 -->
-<div class="border border-slate-200 rounded-xl p-5 transition bg-slate-50/50">
-<button class="w-full flex items-center justify-between text-left font-bold text-slate-900 text-base focus:outline-none" onclick="toggleFaq(this)">
-<span>Do you provide estimates for EV chargers and panel upgrades?</span>
-<span class="faq-icon text-orange-600 font-extrabold text-xl ml-2">+</span>
-</button>
-<div class="faq-answer hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/80 pt-3">
-              Yes. Level-2 EV charger installations and 200A service panel replacements are among our primary specialties. We conduct a load calculation on your existing breaker panel to guarantee safe operational headroom.
-            </div>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: FAQSection -->
-<!-- BEGIN: ContactAndGeoSection -->
-<section class="py-24 bg-[#090d16] text-white relative" data-purpose="contact-and-geo" id="contact">
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: ContactAndEstimateSection -->
+<!-- Direct phone, hours, Google Map link, and consultation inquiry form -->
+<section class="py-24 bg-[#080A0E] border-t border-[#181E29] relative" id="contact">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
-<span class="text-xs font-bold uppercase tracking-widest text-orange-500">Get In Touch</span>
-<h2 class="text-3xl sm:text-5xl font-black font-display tracking-tight text-white">
-            CONTACT PENALOZA ELECTRICAL
-          </h2>
-<p class="text-slate-400 text-sm">
-            Submit a service request or call our field desk directly for swift scheduling.
-          </p>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Information Side -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/30 rounded-full px-3.5 py-1">
+<span class="text-xs font-semibold text-brand-orange uppercase tracking-wider">Start Your Build</span>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-<!-- Service Form Block -->
-<div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
-<h3 class="text-xl font-bold text-white mb-2">Request an Electrical Estimate</h3>
-<p class="text-xs text-slate-400 mb-6">Complete this quick form and our master electrician will follow up within business hours.</p>
-<form class="space-y-4" id="contact-form" onsubmit="handleFormSubmit(event)">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+              Request Your Project Consultation
+            </h2>
+<p class="text-sm text-gray-400">
+              Speak directly with an executive general contractor. We review your land, blueprints, budget parameters, and deliver a comprehensive initial roadmap.
+            </p>
+<div class="space-y-4 pt-4">
+<!-- Direct Phone -->
+<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+</div>
+<div>
+<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Direct Phone</span>
+<p class="text-sm font-bold text-white"><a class="hover:text-brand-orange transition-colors" href="tel:+18067754385">+1 (806) 775-4385</a></p>
+</div>
+</div>
+<!-- Operating Hours -->
+<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Operating Hours</span>
+<p class="text-xs font-bold text-white">Weekdays 8:00 AM – 5:00 PM</p>
+<p class="text-[11px] text-gray-400">Weekends Closed</p>
+</div>
+</div>
+<!-- Location & Map Link -->
+<div class="flex items-center space-x-4 bg-[#11151D] border border-brand-border p-4 rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<span class="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">Regional Headquarters</span>
+<p class="text-xs font-bold text-white">Lubbock &amp; West Texas Region</p>
+<a class="text-[11px] text-brand-orange hover:underline font-semibold" href="https://maps.app.goo.gl/VXRWgNS3AFtcR1NY7" rel="noopener noreferrer" target="_blank">
+                    Open in Google Maps ↗
+                  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form Side -->
+<div class="lg:col-span-7">
+<div class="bg-[#121620] border border-brand-border rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+<h3 class="text-lg font-bold text-white mb-2">Send Project Details</h3>
+<p class="text-xs text-gray-400 mb-6">Our senior estimating team responds within one business day.</p>
+<form class="space-y-4" id="consultationForm" onsubmit="handleFormSubmit(event)">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
-<label class="block text-xs font-semibold text-slate-300 mb-1" for="full-name">Your Full Name *</label>
-<input class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" id="full-name" placeholder="John Doe" required="" type="text"/>
+<label class="block text-xs font-medium text-gray-300 mb-1" for="clientName">Full Name *</label>
+<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientName" placeholder="e.g. John Miller" required="" type="text">
 </div>
 <div>
-<label class="block text-xs font-semibold text-slate-300 mb-1" for="phone-number">Phone Number *</label>
-<input class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" id="phone-number" placeholder="(704) 906-5639" required="" type="tel"/>
+<label class="block text-xs font-medium text-gray-300 mb-1" for="clientPhone">Phone Number *</label>
+<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientPhone" placeholder="(806) 000-0000" required="" type="tel">
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
-<label class="block text-xs font-semibold text-slate-300 mb-1" for="email-address">Email Address</label>
-<input class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" id="email-address" placeholder="john@example.com" type="email"/>
+<label class="block text-xs font-medium text-gray-300 mb-1" for="clientEmail">Email Address *</label>
+<input class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="clientEmail" placeholder="john@company.com" required="" type="email">
 </div>
 <div>
-<label class="block text-xs font-semibold text-slate-300 mb-1" for="service-type">Service Needed *</label>
-<select class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" id="service-type" required="">
-<option value="panel-upgrade">Panel Upgrade / Breaker Box</option>
-<option value="lighting-installation">Smart Lighting / Recessed Fixtures</option>
-<option value="ev-charger">EV Charger Installation</option>
-<option value="troubleshooting">Diagnostic &amp; Troubleshooting</option>
-<option value="commercial">Commercial Electrical Service</option>
-<option value="other">Other Inquiry</option>
+<label class="block text-xs font-medium text-gray-300 mb-1" for="projectType">Project Classification *</label>
+<select class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectType" required="">
+<option value="Commercial Build-Out">Commercial Build-Out</option>
+<option value="Custom Luxury Residence">Custom Luxury Residence</option>
+<option value="Timber &amp; Heavy Framing">Timber &amp; Heavy Framing</option>
+<option value="Roofing / Structural Envelope">Roofing / Structural Envelope</option>
+<option value="Tenant Renovation">Tenant Renovation</option>
+<option value="Other Scope">Other General Contracting Scope</option>
 </select>
 </div>
 </div>
 <div>
-<label class="block text-xs font-semibold text-slate-300 mb-1" for="notes">Project Details or Issues</label>
-<textarea class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none" id="notes" placeholder="Describe the electrical issue or project specifications..." rows="4"></textarea>
+<label class="block text-xs font-medium text-gray-300 mb-1" for="projectScope">Scope Details &amp; Target Timeline</label>
+<textarea class="w-full bg-[#0A0D13] border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-all" id="projectScope" placeholder="Briefly describe your site location, square footage, architectural drawings status, and preferred completion timeline..." rows="3"></textarea>
 </div>
-<div class="hidden text-xs py-2 px-3 rounded font-medium" id="form-feedback"></div>
-<button class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-sm uppercase py-3.5 rounded-lg shadow-orange-glow transition tracking-wider active:scale-[0.99]" type="submit">
-                Submit Service Request
-              </button>
+<button class="w-full bg-brand-orange hover:bg-brand-darkorange text-white text-xs sm:text-sm font-bold py-3.5 px-6 rounded-lg transition-all duration-200 transform active:scale-[0.99] shadow-lg shadow-brand-orange/25" type="submit">
+                  Submit Project Consultation
+                </button>
+<p class="text-[10px] text-gray-500 text-center">Your privacy is respected. No spam, ever. Standard phone rates apply.</p>
 </form>
+<!-- Form Success Notification Container -->
+<div class="hidden absolute inset-0 bg-[#121620]/95 rounded-2xl flex flex-col items-center justify-center p-6 text-center backdrop-blur-sm transition-all duration-300" id="formSuccessToast">
+<div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-3">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
-<!-- Contact Details & Google Business Profile Card -->
-<div class="lg:col-span-5 space-y-6">
-<!-- Direct Info Card -->
-<div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-5">
-<h3 class="text-lg font-bold text-white">Direct Communication</h3>
-<div class="space-y-4">
-<!-- Phone -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-orange-600/20 text-orange-500 border border-orange-500/30">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
-</div>
-<div>
-<p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Direct Phone</p>
-<a class="text-lg font-bold text-white hover:text-orange-400 transition tracking-tight" href="tel:+17049065639">
-                      +1 704-906-5639
-                    </a>
-</div>
-</div>
-<!-- Operating Hours -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</div>
-<div>
-<p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Operating Hours</p>
-<p class="text-sm font-semibold text-slate-200 mt-0.5">Monday – Friday: 8:00 AM – 5:00 PM</p>
-<p class="text-xs text-slate-400">Saturday &amp; Sunday: Closed</p>
-</div>
-</div>
-<!-- Google Business Link -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-<svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</div>
-<div>
-<p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Google Profile &amp; Location</p>
-<a class="text-xs font-bold text-orange-400 hover:underline flex items-center gap-1 mt-1" href="https://maps.app.goo.gl/WonpUndH5CSPovhm8" rel="noopener noreferrer" target="_blank">
-                      Open in Google Maps →
-                    </a>
-</div>
-</div>
-</div>
-</div>
-<!-- Google Business Profile Card Widget -->
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg relative overflow-hidden">
-<div class="flex items-center justify-between mb-3">
-<div class="flex items-center gap-2">
-<span class="h-3 w-3 rounded-full bg-emerald-500"></span>
-<span class="text-xs font-bold uppercase tracking-wider text-slate-300">Verified Business</span>
-</div>
-<div class="flex items-center text-amber-400 text-xs font-bold">
-<span>★★★★★</span>
-<span class="ml-1 text-slate-300">5.0</span>
-</div>
-</div>
-<h4 class="font-bold text-white text-base">Penaloza Electrical, LLC</h4>
-<p class="text-xs text-slate-400 mt-1">Licensed Electrical Contractor in North Carolina</p>
-<!-- Embedded Interactive Map -->
-<div class="mt-4 rounded-xl overflow-hidden border border-slate-800 h-44 bg-slate-950">
-<iframe class="w-full h-full border-0 filter invert contrast-125 opacity-80 hover:opacity-100 transition-opacity" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104278.43163152062!2d-80.8431267!3d35.2270869!2m3!1f0!2f0!3f0!32m2!1i1024!2i780!4f13.1!3m3!1m2!1s0x8856a00a1f9a1f2b%3A0x0!2zMzXCsDEzJzM3LjUiTiA4MMKwNTAnMzUuMyJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" title="Penaloza Electrical Location">
-</iframe>
-</div>
-<div class="mt-4 flex items-center justify-between">
-<span class="text-xs text-slate-400">Serving Residential &amp; Commercial</span>
-<a class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3 py-1.5 rounded transition" href="https://maps.app.goo.gl/WonpUndH5CSPovhm8" rel="noopener noreferrer" target="_blank">
-                  Directions &amp; Reviews
-                </a>
+<h4 class="text-base font-bold text-white mb-1">Inquiry Dispatched Successfully!</h4>
+<p class="text-xs text-gray-300 max-w-sm mb-4">A senior estimator from B Square Construction LLP will call you during operating hours (M–F 8 AM–5 PM).</p>
+<button class="px-4 py-2 bg-brand-card border border-gray-700 hover:border-brand-orange rounded-lg text-xs text-white" onclick="resetFormState()">Send Another Message</button>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: ContactAndGeoSection -->
+<!-- END: ContactAndEstimateSection -->
 </main>
 <!-- BEGIN: MainFooter -->
-<footer class="bg-black text-slate-400 border-t border-slate-900 py-16" data-purpose="site-footer">
+<!-- Clean dark footer matching the Buildix finish with links and licensing -->
+<footer class="bg-[#05070A] border-t border-[#141A24] py-14 text-xs text-gray-400">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
-<!-- Brand Info -->
-<div class="lg:col-span-2 space-y-4">
-<img alt="Penaloza Electrical Logo" class="h-10 w-auto object-contain brightness-110" src="https://lh3.googleusercontent.com/aida/AEtjO1WMgj15Wk5COB007AwkUrLqOugGPdDV6IDGpI19ScJc-i3t8L49ZB_SMZgQDZYmqTiQZ9oeIPz327sufIQgDdLQSP6a1z_kmArEBn1w9D44GpVoFlpQhx8wPNfMYJJDpRUbYgYsE36Ob36ji1Oc6LIs4beg7q1qCYMiwP4aQVCI_HOxWkrljRyabCXzdmbKDbbTwxGp292bIlg1rOJgQHc2rnBXAHR-Z1acCIQEVqd04w"/>
-<p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-            Penaloza Electrical, LLC is a premier licensed electrical contractor. We engineer precision electrical infrastructure, modern architectural illumination, and reliable safety installations.
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Company Identity -->
+<div class="md:col-span-1 space-y-3">
+<div class="flex items-center space-x-2">
+<div class="w-7 h-7 rounded bg-[#2E4036] flex items-center justify-center">
+<span class="text-white font-black text-sm">B</span>
+</div>
+<span class="font-bold text-white text-sm tracking-wide">B SQUARE CONSTRUCTION</span>
+</div>
+<p class="text-[11px] text-gray-400 leading-relaxed">
+            Leading general contracting firm delivering commercial frameworks, luxury custom living spaces, and engineered timber builds in Lubbock &amp; West Texas.
           </p>
-<div class="text-xs text-slate-300 space-y-1">
-<p><strong class="text-white">Direct:</strong> <a class="hover:text-orange-400 text-orange-500 font-semibold" href="tel:+17049065639">+1 704-906-5639</a></p>
-<p><strong class="text-white">Hours:</strong> Mon–Fri 8:00 AM – 5:00 PM (Sat–Sun Closed)</p>
 </div>
-</div>
-<!-- Quick Links -->
-<div class="space-y-3">
-<h5 class="text-xs font-bold uppercase tracking-wider text-white">Navigation</h5>
-<ul class="text-xs space-y-2">
-<li><button class="hover:text-white transition" onclick="scrollToId('home')">Home</button></li>
-<li><button class="hover:text-white transition" onclick="scrollToId('about')">About Us</button></li>
-<li><button class="hover:text-white transition" onclick="scrollToId('solutions')">Solutions</button></li>
-<li><button class="hover:text-white transition" onclick="scrollToId('services')">Services</button></li>
-<li><button class="hover:text-white transition" onclick="scrollToId('pricing')">Pricing Plans</button></li>
-<li><button class="hover:text-white transition" onclick="scrollToId('contact')">Request Service</button></li>
+<!-- Quick Jump Links -->
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Navigation</h4>
+<ul class="space-y-2 text-[11px]">
+<li><a class="hover:text-brand-orange transition-colors" href="#home">Home Showcase</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#features">Key Capabilities</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#services">General Contracting Scope</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#works">Featured Projects</a></li>
+<li><a class="hover:text-brand-orange transition-colors" href="#specs">Structural Specifications</a></li>
 </ul>
 </div>
-<!-- Electrical Services -->
-<div class="space-y-3">
-<h5 class="text-xs font-bold uppercase tracking-wider text-white">Services</h5>
-<ul class="text-xs space-y-2">
-<li><span class="hover:text-white transition cursor-default">200A/400A Panel Upgrades</span></li>
-<li><span class="hover:text-white transition cursor-default">Recessed Smart LED Fixtures</span></li>
-<li><span class="hover:text-white transition cursor-default">Level 2 EV Chargers</span></li>
-<li><span class="hover:text-white transition cursor-default">Commercial 3-Phase Circuits</span></li>
-<li><span class="hover:text-white transition cursor-default">Surge Protection &amp; GFCI</span></li>
-<li><span class="hover:text-white transition cursor-default">Code Violation Corrections</span></li>
-</ul>
+<!-- Operating Details -->
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Business Hours</h4>
+<p class="text-[11px] text-gray-300">Monday – Friday: 8:00 AM – 5:00 PM</p>
+<p class="text-[11px] text-gray-400">Saturday – Sunday: Closed</p>
+<div class="mt-3">
+<span class="text-[10px] text-brand-orange uppercase font-bold tracking-wider">Service Territory</span>
+<p class="text-[11px] text-gray-300">Lubbock County &amp; Panhandle Plains</p>
 </div>
-<!-- Visual Mini Showcase -->
-<div class="space-y-3">
-<h5 class="text-xs font-bold uppercase tracking-wider text-white">Craftsmanship</h5>
-<div class="grid grid-cols-2 gap-2">
-<img alt="Residential Lighting" class="rounded h-14 w-full object-cover border border-slate-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F"/>
-<img alt="Industrial Switchboard" class="rounded h-14 w-full object-cover border border-slate-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_"/>
 </div>
-<a class="inline-block text-[11px] text-orange-400 hover:underline" href="https://maps.app.goo.gl/WonpUndH5CSPovhm8" rel="noopener noreferrer" target="_blank">
-            Google Business Page →
-          </a>
+<!-- Contact & Maps -->
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Headquarters</h4>
+<p class="text-[11px] text-gray-300">Lubbock, TX</p>
+<p class="text-[11px] mt-1">Phone: <a class="text-white hover:text-brand-orange" href="tel:+18067754385">+1 (806) 775-4385</a></p>
+<div class="mt-3">
+<a class="inline-flex items-center space-x-1.5 text-brand-orange hover:underline text-[11px] font-semibold" href="https://maps.app.goo.gl/VXRWgNS3AFtcR1NY7" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>View Google Business Location</span>
+</a>
+</div>
 </div>
 </div>
 <!-- Bottom Bar -->
-<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-<p>© <span id="current-year"></span> Penaloza Electrical, LLC. All rights reserved. Licensed Electrical Contractor.</p>
-<div class="flex items-center gap-6">
-<span class="hover:text-slate-300">National Electrical Code (NEC) Compliant</span>
-<span class="hover:text-slate-300">Bonded &amp; Insured</span>
+<div class="border-t border-[#131822] pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-400 gap-3">
+<p>© 2026 B Square Construction LLP. All rights reserved.</p>
+<div class="flex space-x-5 text-gray-400">
+<span>Licensed &amp; Bonded Texas Contractor</span>
+<span>•</span>
+<span>Equal Opportunity Builder</span>
 </div>
 </div>
 </div>
 </footer>
 <!-- END: MainFooter -->
 <!-- BEGIN: InteractiveScripts -->
-<script data-purpose="site-interactivity">
-    // Set dynamic current year in footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+<!-- Vanilla JavaScript for smooth scrolling with header offset, services tab filtering, and consultation form feedback -->
+<script data-purpose="smooth-scrolling">
+    // Smooth scrolling with sticky header offset compensation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    // Smooth scroll helper
-    function scrollToId(elementId) {
-      const target = document.getElementById(elementId);
-      if (target) {
-        const offset = 80; // Header height compensation
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = target.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+<script data-purpose="services-filtering">
+    // Simple filter tabs for services scope
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const buttons = document.querySelectorAll('.service-tab-btn');
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    }
+      // Update button styling states
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-orange', 'text-white');
+        btn.classList.add('bg-[#161B24]', 'text-gray-400');
+      });
+      event.target.classList.remove('bg-[#161B24]', 'text-gray-400');
+      event.target.classList.add('bg-brand-orange', 'text-white');
 
-    // Mobile menu toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    function toggleMobileMenu() {
-      mobileMenu.classList.toggle('hidden');
-    }
-
-    if (mobileBtn) {
-      mobileBtn.addEventListener('click', toggleMobileMenu);
-    }
-
-    // Solutions data repository
-    const solutionsData = [
-      {
-        tag: 'Residential Lighting & Smart Controls',
-        title: 'Modern & Impactful Solutions',
-        desc: 'Precision smart architectural recessed LED ceiling lighting, energy-efficient fixtures, dimmer banks, and Level-2 EV charger installations designed for performance and aesthetics.',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0yppBYRQbIpctvNyRzsxEFjl_Rst2vtXt0XvENcajEtSvg8H0nYl3Ow6jpp0zWVv-rEjncVXAhgBBhrE3K1OrkilgwZCnEUd1VP9He1piM5mD796MYI0RvvRVvR268iT5jPBavvbmhJHDAFHKJqe84Yradx6nvu6cnoVPAMT8OCg0dBmF1zppctTmqziFJXBUaf8vgAit9s8xr8dBLjMdBAry64mGx5tc4djG_L7F'
-      },
-      {
-        tag: 'Power Infrastructure & Safety',
-        title: 'Breaker Panels & Whole-Home Rewiring',
-        desc: 'Sub-panel distribution, 100A to 200A/400A service upgrades, fuse replacements, code corrections, and complete branch-circuit rewiring for safe, reliable power.',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_'
-      },
-      {
-        tag: 'Commercial Distribution & Systems',
-        title: 'Experience-Focused Commercial Installations',
-        desc: 'Heavy-duty conduit bending, 3-phase wiring systems, retail fit-outs, industrial machinery hookups, and commercial blueprint execution with master-level precision.',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCYP-cR5rRH7GRMQfVjW9OYJ1Kw-ZobFH19x7W2wC-WToBbrb5XjAPwqdqYafBCF9nqTyYeF_dGuwTWIAmqzUUbHZ9BR5EQabL7ggUp_nFy65hi4UTMLt2N04ogiIP8E4hpYRrMePjewJB9vz-xmBt9CuBU-Dzjl_dlLODKA7Nj8tdTWbH9exeZ33sBSGQBXtzzBnFwM20Isa4H4vBQojxlFA0SCKqe5iA-gNyTuoQq'
-      },
-      {
-        tag: 'Safety Audits & Code Compliance',
-        title: 'Safety Maintenance & Thermal Inspection',
-        desc: 'Thermal infrared diagnostics, whole-home surge protection installation, GFCI/AFCI verification, and detailed safety audits for real estate and insurance transactions.',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUrhs7UOAcKbsZX3UxNSFn0vtUo1jqPSi8mQms4vBqECnThb8HMqA7h5X6CCbkh-fLSADgRKUKAIuXQNTgSA4UjSzGYUE3Mg9fxqiW9NZyzaPq073pL8U-FJ9ptafEJnZdvbQmn7Qkp7WD83UJ8lpdbCRn50UsfLBd4itVyy4Ou4Ub0Hs_6Qf5QWFJy8Mym3zc_0i31obijtBXHRl7ZGuiVqhuJGlbq8sHEd_wr2n_'
-      }
-    ];
-
-    // Solution tab selector
-    function selectSolution(index) {
-      const data = solutionsData[index];
-      if (!data) return;
-
-      // Update right container
-      const img = document.getElementById('solution-image');
-      const tag = document.getElementById('solution-tag');
-      const title = document.getElementById('solution-title');
-      const desc = document.getElementById('solution-desc');
-
-      if (img) {
-        img.style.opacity = '0.4';
-        setTimeout(() => {
-          img.src = data.img;
-          img.style.opacity = '1';
-        }, 150);
-      }
-      if (tag) tag.textContent = data.tag;
-      if (title) title.textContent = data.title;
-      if (desc) desc.textContent = data.desc;
-
-      // Toggle active states on left buttons
-      const buttons = document.querySelectorAll('.solution-btn');
-      buttons.forEach((btn, i) => {
-        if (i === index) {
-          btn.classList.add('border-orange-500/80', 'bg-slate-900/90');
-          btn.classList.remove('border-slate-800', 'bg-slate-900/40');
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
         } else {
-          btn.classList.remove('border-orange-500/80', 'bg-slate-900/90');
-          btn.classList.add('border-slate-800', 'bg-slate-900/40');
+          card.style.display = 'none';
         }
       });
     }
-
-    // FAQ Accordion toggle
-    function toggleFaq(buttonElement) {
-      const card = buttonElement.parentElement;
-      const answer = card.querySelector('.faq-answer');
-      const icon = buttonElement.querySelector('.faq-icon');
-
-      if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        icon.textContent = '−';
-        icon.classList.add('text-orange-500');
-      } else {
-        answer.classList.add('hidden');
-        icon.textContent = '+';
-        icon.classList.remove('text-orange-500');
+  </script>
+<script data-purpose="form-submission-handler">
+    // Handle inquiry consultation form submissions
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('formSuccessToast');
+      if (toast) {
+        toast.classList.remove('hidden');
       }
     }
 
-    // Contact form mock handling
-    function handleFormSubmit(event) {
-      event.preventDefault();
-      const feedback = document.getElementById('form-feedback');
-      const name = document.getElementById('full-name').value;
-      
-      feedback.classList.remove('hidden', 'bg-red-900/50', 'text-red-200', 'border-red-700');
-      feedback.classList.add('bg-emerald-950/80', 'text-emerald-300', 'border', 'border-emerald-700');
-      feedback.textContent = `Thank you, ${name}! Your inquiry has been sent to Penaloza Electrical, LLC. We will call you within standard hours (Mon-Fri 8am-5pm).`;
-
-      event.target.reset();
+    function resetFormState() {
+      const form = document.getElementById('consultationForm');
+      const toast = document.getElementById('formSuccessToast');
+      if (form) form.reset();
+      if (toast) toast.classList.add('hidden');
     }
   </script>
 <!-- END: InteractiveScripts -->
-</body></html>
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div></body></html>
